@@ -2,7 +2,32 @@
 
 使用 GB1 数据训练 Transformer、微调 ESM2，并通过 LangGraph Agent 和 MCP 完成虚拟定向进化实验。
 
-以下命令均在项目根目录执行
+## 0. clone project
+
+本项目使用 Git LFS 管理模型权重和训练 checkpoint。克隆前请先安装 Git 和 Git LFS，避免缺少实际模型文件。
+
+Ubuntu / Debian 可通过以下命令安装：
+
+```bash
+sudo apt update
+sudo apt install git git-lfs
+```
+
+其他系统请参考 [Git LFS 安装说明](https://git-lfs.com/)。安装完成后，初始化 Git LFS 并克隆项目：
+
+```bash
+git lfs install
+git clone https://github.com/void-wizard/gb1transformer.git
+cd gb1transformer
+```
+
+克隆时会自动下载 LFS 管理的大文件，请等待下载完成。如果下载中断，或此前未安装 Git LFS，可在安装并初始化 Git LFS 后，进入项目根目录补充下载：
+
+```bash
+git lfs pull
+```
+
+以下命令均在克隆后的项目根目录 `gb1transformer/` 执行。
 
 ## 1. 准备环境和数据
 
