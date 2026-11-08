@@ -1,0 +1,16 @@
+{
+  "seed": 42,
+  "fractions_of_non_wt": {
+    "train": 0.6,
+    "validation": 0.1,
+    "test": 0.1,
+    "pool": 0.2
+  },
+  "wild_type_split": "train",
+  "counts": {
+    "train": 322178,
+    "pool": 107392,
+    "test": 53697,
+    "validation": 53696
+  }
+}

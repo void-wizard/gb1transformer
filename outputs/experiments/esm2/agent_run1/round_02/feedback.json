@@ -1,0 +1,96 @@
+{
+  "model_type": "esm2",
+  "knowledge": false,
+  "experiment_id": "a9bf6b62df82459cad209ea6995542b5",
+  "evaluated_at": "2026-11-08T16:44:49.512784+00:00",
+  "recommendation_sha256": "12672d0cab8cdd62eb01107c8b9a31a1226967f009734fd9dbc89ccaf15818a5",
+  "score_type": "measured_log_enrichment",
+  "results": [
+    {
+      "candidate_id": 113673,
+      "sequence": "MQYKLILNGKTLKGETTTQAVDAATAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "E19Q",
+      "predicted_fitness": 0.330841988325119,
+      "reason": "E19Q 单点（n_mutations=1）。已知实验：E19Q:A24Y 实测 2.529 为本组最高，但双点结果不可拆分为 E19Q 单点效应，本轮尚无任何 19 位单点实测。模型预测 0.331（WT 基线预测 -0.033），仅作弱先验。待检验假设：若 E19Q 单点接近 WT，则 2.529 主要来自 19×24 上位性；若单点本身已高，则强富集可由单点主效应解释。局限：单点实测不能直接外推到双点背景，且模型对单点判别力弱、预测非实验值。",
+      "measured_fitness": 0.39447902064376605
+    },
+    {
+      "candidate_id": 113728,
+      "sequence": "MQYKLILNGKTLKGETTTQAVDAVTAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "E19Q:A24V",
+      "predicted_fitness": 0.7158128619194031,
+      "reason": "E19Q:A24V。与已实测最高的 113730（E19Q:A24Y=2.529）共享 19 位背景，仅把 24 位由芳香 Y 换成 β-分支小疏水 V，用于区分“芳香侧链必需”与“19 位主效应”。模型预测 0.716（模型对 113730 的预测为 1.675，低于实测 0.85，存在低估）。待检验假设：E19Q:A24V 明显低于 2.529 则支持 19×24 配对特异性；若仍高则提示 19 位是主要驱动。局限：以双点数据推断单点贡献不成立；单次测量无重复与误差估计。",
+      "measured_fitness": 0.6787833789497553
+    },
+    {
+      "candidate_id": 113721,
+      "sequence": "MQYKLILNGKTLKGETTTQAVDAMTAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "E19Q:A24M",
+      "predicted_fitness": 0.8956843018531799,
+      "reason": "E19Q:A24M。同 E19Q 背景下的非芳香疏水对照，Met 体积接近 Tyr，可把“芳香性”和“侧链体积”两个因素解耦（与 113728 A24V 配对比较）。模型预测 0.896，低于含芳香 24 的候选。待检验假设：若 A24M≈A24V 且均远低于 E19Q:A24Y，芳香性为关键；若 A24M 高于 A24V，则体积/疏水性也参与。局限：模型预测区间压缩（上轮预测 1.50–1.76 对应实测 1.23–2.53），不能用于精细排序；预测非实测。",
+      "measured_fitness": 0.8964108220114406
+    },
+    {
+      "candidate_id": 113724,
+      "sequence": "MQYKLILNGKTLKGETTTQAVDAQTAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "E19Q:A24Q",
+      "predicted_fitness": 1.1972554922103882,
+      "reason": "E19Q:A24Q。同背景极性非芳香对照，模型预测 1.197，是本轮 24 位非芳香候选中最高。已知 E19Q:A24Y=2.529、E19W:A24H=2.204、E19V:A24Y=2.018 说明 19 位可与多种 24 位芳香侧链组合，但均不能证明任一单点有益。待检验假设：若 E19Q:A24Q 接近 2.529，则 24 位只需极性/亲水而非芳香特异；若显著下降，则芳香环为必需。局限：模型对 19 位判别力弱（单点探针 E19W 仅 0.26），其 1.20 的绝对值不可信。",
+      "measured_fitness": 1.0929684309195964
+    },
+    {
+      "candidate_id": 373602,
+      "sequence": "MMYKLILNGKTLKGETTTEAVDAATAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "Q2M",
+      "predicted_fitness": 0.33031943440437317,
+      "reason": "Q2M 单点（n_mutations=1）。已知 Q2M:A24Y 实测 2.018、Q2R:A24Y 实测 1.697、训练集 Q2F:A24W=1.967，均为双点，无法拆分出 Q2 位单点贡献。模型预测 0.330。待检验假设：若 Q2M 单点接近 WT，则 2.0 左右的双点富集主要来自 24Y 与 N 端替换的协同；若单点已明显为正，则 N 端疏水替换本身即有益。局限：模型单点输出与 WT 仅差 0.36，分辨力低；预测值不属实验测量。",
+      "measured_fitness": 0.3677596404377812
+    },
+    {
+      "candidate_id": 373644,
+      "sequence": "MMYKLILNGKTLKGETTTEAVDAFTAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "Q2M:A24F",
+      "predicted_fitness": 1.3709001541137695,
+      "reason": "Q2M:A24F。已知实测 Q2M:A24Y=2.018、Q2R:A24Y=1.697、训练集 Q2F:A24W=1.967，提示 N 端疏水替换与 24 位芳香可共存，但都不能把增益归给 Q2 或 24 单点。模型预测 1.371（本轮较高的芳香类预测）。待检验假设：24 位芳香身份可在 Y/F 间替换，即 Q2M 的增益不依赖 Y 的具体形状。局限：A24Y/A24F 的差异小于实验噪声量级时无法区分；模型对 24 芳香家族给分被主效应主导。",
+      "measured_fitness": 1.4359377125930912
+    },
+    {
+      "candidate_id": 373650,
+      "sequence": "MMYKLILNGKTLKGETTTEAVDAMTAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "Q2M:A24M",
+      "predicted_fitness": 0.9270462393760681,
+      "reason": "Q2M:A24M。与 373644（Q2M:A24F）构成 Q2M 背景下的芳香/非芳香对照，用于检验“24 位需芳香”的结论是否只在 E19Q 背景成立（背景依赖性）。模型预测 0.927 明显低于 Q2M:A24F 的 1.371。待检验假设：若 Q2M:A24M 大幅低于 Q2M:A24Y(2.018) 与 Q2M:A24F，则芳香需求是跨背景的普遍规律；否则提示上位性配对特异。局限：本轮两枚 Q2M 双点各自只有一次测量，0.93 与 1.37 的模型差不宜当作实测差。",
+      "measured_fitness": 0.9316505372133264
+    },
+    {
+      "candidate_id": 35722,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAWTAEKVFKQYANDNGVDGEWTYDDATKKFTVTE",
+      "mutations": "A24W:T51K",
+      "predicted_fitness": 1.584973692893982,
+      "reason": "A24W:T51K。已知实测 A24Y:T51K=1.362（预测 1.736，高估约 0.37）、A24Y:T51Q=1.650、A24Y:T51H=2.195（训练集）、A24W:T51F=2.072，说明 51 位极性/芳香优于正电荷 K，但该观察全部来自 24Y 背景。模型预测 1.585。待检验假设：51 位正电荷的劣势是位点内在属性（不随 24 位由 Y 换为 W 而改变）。局限：模型对含正电荷 51 的候选有系统性高估记录，1.585 很可能偏高；A24W:T51F 的高分不能证明 T51 单点有益。",
+      "measured_fitness": 1.6498646088023772
+    },
+    {
+      "candidate_id": 35965,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVFGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:D40F",
+      "predicted_fitness": 1.7508317232131958,
+      "reason": "A24Y:D40F。已知 A24W:D40H=2.094、A24H:D40W=1.924（训练集），而 A24W:D40W=1.601 实测低于其预测 1.764，提示 40 位高分依赖 24 位身份。池中无 A24Y:D40H，故用 40 位芳香替换做检验。模型预测 1.751（本轮最高）。待检验假设：40 位芳香侧链可与 24Y 组合，即 40 位增益不只出现在 24W 背景。局限：A24W:D40W 的实测偏低说明芳香-芳香叠加可能不如预测；此预测属模型输出，且模型在强变体上系统性饱和，不能视为优选依据。",
+      "measured_fitness": 1.6068472237186862
+    },
+    {
+      "candidate_id": 36325,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATKEFTVTE",
+      "mutations": "A24Y:T51E",
+      "predicted_fitness": 1.7288371324539185,
+      "reason": "A24Y:T51E。已知 24Y 背景下 51 位极性/芳香替换实测偏高（T51Q=1.650、T51K=1.362），训练集 T51H=2.195、T51F=1.935、T51S=1.928；51 位带电荷的样本极少且只有正电荷版本。模型预测 1.729。待检验假设：负电荷 E 与正电荷 K 效应不同，51 位对“带电荷”的耐受边界可被进一步界定。局限：24Y 主效应可能掩盖 51 位差异，小差距（如 1.36 与 1.65 之间）不应被解读为确定性排序；预测非实测值，模型在该区间分辨力低。",
+      "measured_fitness": 1.6952532746164046
+    }
+  ],
+  "summary": {
+    "n_evaluated": 10,
+    "mean_measured_fitness": 1.0749954649906226,
+    "best_measured_fitness": 1.6952532746164046,
+    "fraction_above_wt": 1.0
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "model_type": "esm2",
+  "knowledge": true,
+  "experiment_id": "2c41140ba7db48178640657619e4ee84",
+  "evaluated_at": "2026-11-08T17:02:53.325259+00:00",
+  "recommendation_sha256": "9bc9816bbdbc8a7789c9ab8b858cb4575a51f0d4016b7c24b4d48f1140647cdf",
+  "score_type": "measured_log_enrichment",
+  "results": [
+    {
+      "candidate_id": 35373,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAWTAEKVFKQYANDNGVWGEWTYDDATKTFTVTE",
+      "mutations": "A24W:D40W",
+      "predicted_fitness": 1.7642384767532349,
+      "reason": "A24W:D40W，模型预测 1.764。实验观察（均为实测对数富集）：A24W 单点 1.456（variant:35279）、D40W 单点 1.214（variant:82910），加性预期约 2.670；同背景已有 A24W:D40H 实测 2.094（variant:35361，相对加性 2.434 偏离约 −0.34）与 A24W:D40F 实测 1.772（candidate:35359，相对加性 2.425 偏离约 −0.65）。假设：A24W 背景下的 D40 负偏离可能随 D40 单点增益增大而加深，本点是该谱系中加性预期最高的检验点。局限：偏离为同一实验背景的算术差，无重复测量与显著性检验；模型预测 1.764 明显低于加性预期 2.670，属高预测不确定区。",
+      "measured_fitness": 1.6008952171031166
+    },
+    {
+      "candidate_id": 35363,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAWTAEKVFKQYANDNGVKGEWTYDDATKTFTVTE",
+      "mutations": "A24W:D40K",
+      "predicted_fitness": 1.3708256483078003,
+      "reason": "A24W:D40K，模型预测 1.371。实验观察：A24W 单点 1.456（variant:35279）、D40K 单点 −0.018（variant:79860），加性预期约 1.438，是本谱系中唯一下降至 A24W 单点附近以下的加性预期。设计作用：作为 D40 谱系的\"近零单点\"阴性对照，与 A24W:D40H/F（负偏离 −0.34/−0.65）并列，可区分\"A24W 背景下 D40 位普遍负偏离\"与\"负偏离仅出现在高增益 D40 残基\"两种假设。局限：仍为单背景、单残基算术比较；D40K 单点本身接近零（−0.018），不能把接近零解释为中性。",
+      "measured_fitness": 1.237710512543416
+    },
+    {
+      "candidate_id": 35372,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAWTAEKVFKQYANDNGVVGEWTYDDATKTFTVTE",
+      "mutations": "A24W:D40V",
+      "predicted_fitness": 1.5872317552566528,
+      "reason": "A24W:D40V，模型预测 1.587。实验观察：A24W 单点 1.456（variant:35279），D40V 无单点标签（未知），故无法计算加性偏离。设计作用：与 A24W:D40W/F/H（芳香/咪唑类）、A24W:D40K（带电）并列，补充疏水脂肪族残基点，检验 A24W 背景下第 40 位残基身份梯度。局限：仅模型排序支持；D40V 单点缺失意味着即便实测偏离 A24W 单点也无从判断是伙伴效应还是单点本身；D40 单点谱系中的数值不能外推为结构机制。",
+      "measured_fitness": 1.6634057771195503
+    },
+    {
+      "candidate_id": 35360,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAWTAEKVFKQYANDNGVGGEWTYDDATKTFTVTE",
+      "mutations": "A24W:D40G",
+      "predicted_fitness": 1.1702076196670532,
+      "reason": "A24W:D40G，模型预测 1.170，明显低于 A24W 单点 1.456。实验观察：A24W 单点 1.456（variant:35279）；D40G 无单点标签（未知）；同背景 D40H 实测 2.094（variant:35361）。假设：模型对\"高背景 + 小残基（G）\"给出负向预测，若实测接近或高于 A24W 单点，则说明模型在 A24W 背景的 D40 位置对体积收缩型替换过度悲观。局限：无 D40G 单点，无法算加性；模型预测低于单点背景本身这一形态尚未在本组数据中被验证过。",
+      "measured_fitness": 1.3789896546669773
+    },
+    {
+      "candidate_id": 35722,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAWTAEKVFKQYANDNGVDGEWTYDDATKKFTVTE",
+      "mutations": "A24W:T51K",
+      "predicted_fitness": 1.584973692893982,
+      "reason": "A24W:T51K，模型预测 1.585。实验观察：A24W 单点 1.456（variant:35279）、T51K 单点 0.522（variant:468948），加性预期约 1.978；同残基不同背景已有 A24Y:T51K 实测 1.362（candidate:36330，为上一轮最低值）。设计作用：这是本批唯一可做的\"同残基、不同 A24 背景\"交叉对照，可检验 A24Y:T51K 的低值究竟来自残基身份（K）还是 A24Y 背景；同时 A24Y 无单点标签，只有此对照能把背景因素部分解耦。局限：A24W 与 A24Y 只差一个残基，结论仍限于这两个背景，不能推为 A24 位通性；无显著性检验。",
+      "measured_fitness": 1.6498646088023772
+    },
+    {
+      "candidate_id": 27455,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAGTAEKVFKQYANDNGVSGEWTYDDATKTFTVTE",
+      "mutations": "A24G:D40S",
+      "predicted_fitness": 1.2510554790496826,
+      "reason": "A24G:D40S，模型预测 1.251。实验观察：A24G 单点 0.901（variant:27364）、D40S 单点 0.624（variant:81995），加性预期约 1.525；同背景同位置已有 A24G:D40H 实测 1.389（candidate:27446），相对加性 1.879 偏离约 −0.49。假设：A24G 背景下 D40 也可能存在负偏离，且幅度可能介于 A24W 背景的 −0.34 与 −0.65 之间；用 S 检验该现象是否跨残基重复。局限：A24G 与 A24W 单点差异较大（0.901 对 1.456），背景强弱本身可能改变偏离幅度，两个背景的偏离不可直接比较为同一效应大小。",
+      "measured_fitness": 1.1351134733312676
+    },
+    {
+      "candidate_id": 27449,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAGTAEKVFKQYANDNGVLGEWTYDDATKTFTVTE",
+      "mutations": "A24G:D40L",
+      "predicted_fitness": 0.5926622748374939,
+      "reason": "A24G:D40L，模型预测 0.593（低于 A24G 单点 0.901）。实验观察：A24G 单点 0.901（variant:27364）；同背景 A24G:D40H 实测 1.389（candidate:27446）；D40L 无单点标签（未知）。设计作用：与 A24G:D40H（已测）、A24G:D40S（本批）组成 A24G 背景下第 40 位的三点残基谱系，并同时检验模型对\"低预测组合\"是否有系统性低估——若实测明显高于 0.593，则支持模型存在向均值收缩的另一侧表现。局限：D40L 缺单点，无法算加性偏离；三点谱系仍不足以建立残基性质与组合值的排序规律。",
+      "measured_fitness": 0.6187173074431656
+    },
+    {
+      "candidate_id": 35134,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAVTAEKVFKQYANDNGVDGEWTYDDATKTFIVTE",
+      "mutations": "A24V:T53I",
+      "predicted_fitness": 0.13274379074573517,
+      "reason": "A24V:T53I，模型预测 0.133（本批第二低）。实验观察：A24V 单点 0.490（variant:34670）、T53I 单点 −0.275（variant:470410），加性预期约 0.215；同位置已有 A24W:T53I 实测 1.971（variant:35740），相对加性 1.181 偏离约 +0.79（描述性）。设计作用：这是检验\"T53I 的 +0.79 正偏离是否为 A24W 特异\"的关键对照——若 A24V:T53I 接近 0.215，则正偏离更像背景特异；若明显高于加性预期，则 I 的伙伴效应可能跨背景存在。局限：只比较两个 A24 背景、一个残基；无重复测量与误差信息，数值偏离不等于统计显著的上位性。",
+      "measured_fitness": 0.12937418238477283
+    },
+    {
+      "candidate_id": 35143,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAVTAEKVFKQYANDNGVDGEWTYDDATKTFVVTE",
+      "mutations": "A24V:T53V",
+      "predicted_fitness": 0.42789146304130554,
+      "reason": "A24V:T53V，模型预测 0.428。实验观察：A24V 单点 0.490（variant:34670）、T53V 单点 0.064（variant:470932），加性预期约 0.554；同残基已有 A24W:T53V 实测 1.479（candidate:35749），相对加性 1.520 偏离约 −0.04，基本符合加性。设计作用：与 A24V:T53I 配对，在同一 A24V 背景下比较第 53 位 I 与 V，将\"A24W:T53I 的 +0.79 是 I 特异还是背景通性\"这一混淆进一步拆开。局限：A24V 背景单点只有 0.490，绝对值低，若组合接近加性预期，也可能只是空间位阻受限而非无上位性；仅两点不能定论。",
+      "measured_fitness": 0.26797085099386886
+    },
+    {
+      "candidate_id": 35650,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAWTAEKVFKPYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "A24W:Q32P",
+      "predicted_fitness": -1.6726748943328857,
+      "reason": "A24W:Q32P，模型预测 −1.673，为本批最低且与其余预测（−0.02 至 1.76）跨度极大，作为显式的模型校准探针。实验观察：A24W 单点 1.456（variant:35279）；同背景 A24W:Q32N 实测 1.698（candidate:35649）；Q32P 无单点标签（未知），故无法算加性。假设：A24W 背景下第 32 位对多种残基较宽容（A24Y:Q32R 2.008、A24Y:Q32N 1.813、A24Y:Q32L 1.650 均为实测），模型对 Q32P 的极低预测可能是过度悲观；若实测接近 A24W 单点或更高，则提示模型在极端预测端不可用于筛除候选。局限：脯氨酸可能确实破坏该位置构象（性质层面为假设，非 GB1 实测证据）；仅一个残基点，不能据此修正模型，也不能宣称该位点\"可任意替换\"。",
+      "measured_fitness": -2.272870052220697
+    }
+  ],
+  "summary": {
+    "n_evaluated": 10,
+    "mean_measured_fitness": 0.7409171532167816,
+    "best_measured_fitness": 1.6634057771195503,
+    "fraction_above_wt": 0.9
+  }
+}

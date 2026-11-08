@@ -1,0 +1,13 @@
+{
+    "epoch": 12.0,
+    "test_loss": 0.1879093050956726,
+    "test_mse": 0.18790930035437053,
+    "test_pearson": 0.9817913305494099,
+    "test_runtime": 30.2632,
+    "test_samples_per_second": 1774.332,
+    "test_spearman": 0.980399869883065,
+    "test_steps_per_second": 55.48,
+    "test_top_k": 100,
+    "test_top_k_hit": 0.61,
+    "test_top_k_mean_fitness": 1.5758920121192932
+}

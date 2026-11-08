@@ -1,0 +1,58 @@
+{
+  "scratch_random": {
+    "passed": true,
+    "n_unique": 30,
+    "mean_fitness": -1.941318472156455,
+    "best_fitness": 1.3397096804985373,
+    "source": "outputs/experiments/scratch/baselines_run1/random"
+  },
+  "scratch_direct": {
+    "passed": true,
+    "n_unique": 30,
+    "mean_fitness": 1.70119946392134,
+    "best_fitness": 2.5294754581801238,
+    "source": "outputs/experiments/scratch/baselines_run1/direct"
+  },
+  "scratch_agent": {
+    "passed": true,
+    "n_unique": 30,
+    "mean_fitness": 1.570235095639338,
+    "best_fitness": 2.0524766479281347,
+    "source": "outputs/experiments/scratch/agent_run1"
+  },
+  "scratch_knowledge": {
+    "passed": true,
+    "n_unique": 30,
+    "mean_fitness": 1.5476054271170168,
+    "best_fitness": 1.8127610290695928,
+    "source": "outputs/experiments/scratch/knowledge_run1"
+  },
+  "esm2_random": {
+    "passed": true,
+    "n_unique": 30,
+    "mean_fitness": -1.941318472156455,
+    "best_fitness": 1.3397096804985373,
+    "source": "outputs/experiments/esm2/baselines_run1/random"
+  },
+  "esm2_direct": {
+    "passed": true,
+    "n_unique": 30,
+    "mean_fitness": 1.7047579161954107,
+    "best_fitness": 2.0108779543397075,
+    "source": "outputs/experiments/esm2/baselines_run1/direct"
+  },
+  "esm2_agent": {
+    "passed": true,
+    "n_unique": 30,
+    "mean_fitness": 1.4321777802972628,
+    "best_fitness": 2.5294754581801238,
+    "source": "outputs/experiments/esm2/agent_run1"
+  },
+  "esm2_knowledge": {
+    "passed": true,
+    "n_unique": 30,
+    "mean_fitness": 1.3494670501496697,
+    "best_fitness": 2.0524766479281347,
+    "source": "outputs/experiments/esm2/knowledge_run1"
+  }
+}

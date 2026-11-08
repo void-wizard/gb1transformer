@@ -1,0 +1,6 @@
+api_key=Your deepseek API key
+base_url=https://api.deepseek.com
+model=deepseek-flash
+temperature=0.0
+thinking=enabled
+reasoning_effort=high

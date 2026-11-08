@@ -1,0 +1,96 @@
+{
+  "model_type": "scratch",
+  "knowledge": false,
+  "experiment_id": "0d6f4e0fd0704fa7807f91b1c6517ec7",
+  "evaluated_at": "2026-11-08T14:28:33.119369+00:00",
+  "recommendation_sha256": "60d3a74dfc10cae99461d2f5d47de537c82e22dea7841dfc04d6440df98fba0b",
+  "score_type": "measured_log_enrichment",
+  "results": [
+    {
+      "candidate_id": 36205,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATTTFTVTE",
+      "mutations": "A24Y:K50T",
+      "predicted_fitness": 1.593625783920288,
+      "reason": "A24Y:K50T。已知实验观察：训练集中 A24Y:K50Q 实测 2.259、A24Y:K50S 2.145、A24Y:K50D 1.898、A24Y:K50G 1.817；本组已揭示 A24Y:K50R 实测 1.758，说明 A24Y 背景下第 50 位引入极性/小侧链富集偏强，但 Thr 类型尚未测。模型预测（非实验值）：1.594，为本轮我预测过的候选中最高之一。证据局限：双点整体富集不能拆分 K50T 的单点效应；模型对 K50 等稀疏位点此前系统性低估 0.08–0.19，真实值可能更高；且模型固定，排序存在偏差。",
+      "measured_fitness": 1.3837897649383504
+    },
+    {
+      "candidate_id": 36206,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATVTFTVTE",
+      "mutations": "A24Y:K50V",
+      "predicted_fitness": 1.593519687652588,
+      "reason": "A24Y:K50V。已知实验观察：A24Y:K50Q/S/D/G 均为正富集（1.817–2.259），提示第 50 位可容忍多种小/极性侧链；本组已揭示的 A24Y:K50R 为 1.758。Val 属疏水侧链，此前未在 50 位测试。模型预测：1.594。证据局限：预测值来自对 K50 稀疏数据的插值，不能证明 K50V 单点有益；A24Y:K50V 的双点效应可能受 24 位上位作用主导；预测并非实验测量。",
+      "measured_fitness": 1.7189426192787802
+    },
+    {
+      "candidate_id": 36197,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATITFTVTE",
+      "mutations": "A24Y:K50I",
+      "predicted_fitness": 1.4858670234680176,
+      "reason": "A24Y:K50I。已知实验观察：A24Y 骨架下 K50 的 Q/S/D/G/R 五种取代均为正富集（1.758–2.259），但疏水的 Ile 未测；Ile 与 Val 可对照检验 50 位疏水侧链的容忍度。模型预测：1.486。证据局限：K50I 属模型稀疏外推，且疏水侧链可能改变局部堆积；双点高分不能归因于单点 K50I；模型可能低估 K50 位点，实际排序不确定。",
+      "measured_fitness": 1.6498646088023772
+    },
+    {
+      "candidate_id": 367487,
+      "sequence": "MFYKLILNGKTLKGETTTEAVDAHTAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "Q2F:A24H",
+      "predicted_fitness": 1.5261690616607666,
+      "reason": "Q2F:A24H。已知实验观察：Q2F:A24W 实测 1.967、Q2W:A24W 1.913、Q2F:A24Y 1.796，提示 Q2F 与 A24 芳香骨架组合富集偏强；A24H 是已知最强骨架之一（V21A:A24H 2.286、E19W:A24H 2.204）。模型预测：1.526。证据局限：Q2F 的高分此前仅见于 A24W/A24Y 背景，迁移到 A24H 属外推；双点整体效应不能证明 Q2F 单点有益；模型对 2 位与 24 位的上位效应刻画可能不足。",
+      "measured_fitness": 1.6225591581121097
+    },
+    {
+      "candidate_id": 28425,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAHTAEKVFKQYANDNGVDGEWTYDDATKRFTVTE",
+      "mutations": "A24H:T51R",
+      "predicted_fitness": 1.522397756576538,
+      "reason": "A24H:T51R。已知实验观察：A24Y:T51H 实测 2.195、A24W:T51F 2.072、A24Y:T51S 1.928、A24H:T51Y 1.912；但本组上一轮实测 A24H:T51H 仅 1.610，说明 51 位效应强烈依赖 24 位骨架。T51R 此前未测。模型预测：1.522。证据局限：Arg 侧链较大且带正电，模型对带电残基在 51 位的外推可信度低；A24H:T51H 的低值提示 A24H×51H 非可加，A24H:T51R 也可能低于预测；双点不能拆分单点效应。",
+      "measured_fitness": 1.4636137738685326
+    },
+    {
+      "candidate_id": 482819,
+      "sequence": "MQYKLILNGKTLKGETTTEAWDAHTAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "V21W:A24H",
+      "predicted_fitness": 1.4598077535629272,
+      "reason": "V21W:A24H。已知实验观察：V21A:A24H 实测 2.286，是训练集最高双点；A24H 骨架在 E19W:A24H 2.204、A24H:D40W 1.924 等组合中反复高位，但 V21W 未测。该候选检验“21 位增益是否必须是 Ala（小侧链）”。模型预测：1.460。证据局限：Trp 体积大，可能破坏 V21A 所利用的局部构象，预测可能偏乐观；V21A:A24H 的高分不能外推为任何 21 位取代均有益；双点整体效应无法拆分；模型值是预测非实测。",
+      "measured_fitness": 1.4207404401434773
+    },
+    {
+      "candidate_id": 471524,
+      "sequence": "MQYKLILNGKTLKGETTTEAADAYTAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "V21A:A24Y",
+      "predicted_fitness": 1.4253915548324585,
+      "reason": "V21A:A24Y。已知实验观察：V21A:A24H 实测 2.286 为训练集最高，A24Y 背景下 K50Q/T51H/N37V 等组合也处高位（2.195–2.259）。V21A:A24Y 未测，用于检验 V21A 的增益是否为 A24H 专属。模型预测：1.425。证据局限：预测值明显低于 V21A:A24H 的实测 2.286，提示模型认为 A24H 骨架更优，但模型可能低估 21×24 上位效应；双点高分不能证明 V21A 单点有益；预测不等于实验富集。",
+      "measured_fitness": 2.0524766479281347
+    },
+    {
+      "candidate_id": 35601,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAWTAEKVFKQYANDNGVDGEWTYDDATWTFTVTE",
+      "mutations": "A24W:K50W",
+      "predicted_fitness": 1.403927206993103,
+      "reason": "A24W:K50W。已知实验观察：A24W:K50N 实测 1.954、A24W:T51F 2.072，说明 A24W 骨架与 50/51 位取代相容；但上一轮 A24F:T51W 实测仅 1.335（预测 1.522），提示“双大芳香侧链”组合可能受抑。A24W:K50W 正是同类双芳香测试。模型预测：1.404。证据局限：两个大芳香侧链并置可能产生位阻，模型对这类组合此前高估约 0.19；双点效应不能拆分 K50W 的单点贡献；预测非实验值。",
+      "measured_fitness": 1.976628031296629
+    },
+    {
+      "candidate_id": 28290,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAHTAEKVFKQYANDNGVDGEWTYDDATQTFTVTE",
+      "mutations": "A24H:K50Q",
+      "predicted_fitness": 1.2883517742156982,
+      "reason": "A24H:K50Q。已知实验观察：A24Y:K50Q 实测 2.259，是已知 50 位最强变体；A24H 背景亦有多项高位双点（V21A:A24H 2.286、E19W:A24H 2.204、A24H:A48Q 2.037）。A24H:K50Q 未测，直接检验 K50Q 的增益能否从 A24Y 迁移到 A24H。模型预测：1.288。证据局限：模型预测偏低，但上一轮已观察到模型对 K50 稀疏位点低估约 0.08–0.19，实际可能更高；A24H:K50Q 的效应不能由 A24Y:K50Q 直接外推；双点整体值不能拆分为单点；预测非实测。",
+      "measured_fitness": 1.4643633990910427
+    },
+    {
+      "candidate_id": 27125,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAFTAEKVFKKYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "A24F:Q32K",
+      "predicted_fitness": 1.2864367961883545,
+      "reason": "A24F:Q32K。已知实验观察：A24Y:Q32K 实测 1.759（本组已揭示）、A24Y:Q32R 2.008、A24Q:Q32K 1.860，提示 32 位碱基化在多背景正富集；但 A24F 背景整体偏弱（A24F:T51W 实测 1.335）。A24F:Q32K 检验 32 位碱性化在较弱骨架上的可迁移性。模型预测：1.286。证据局限：A24F 骨架的弱效应可能压制 Q32K 的贡献；模型对 Q32K 这类稀疏组合可能低估；双点值不能证明 Q32K 单点有益；预测非实验测量。",
+      "measured_fitness": 1.3668852658775024
+    }
+  ],
+  "summary": {
+    "n_evaluated": 10,
+    "mean_measured_fitness": 1.6119863709336937,
+    "best_measured_fitness": 2.0524766479281347,
+    "fraction_above_wt": 1.0
+  }
+}

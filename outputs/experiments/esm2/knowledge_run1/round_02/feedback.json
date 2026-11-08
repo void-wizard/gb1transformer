@@ -1,0 +1,96 @@
+{
+  "model_type": "esm2",
+  "knowledge": true,
+  "experiment_id": "2c41140ba7db48178640657619e4ee84",
+  "evaluated_at": "2026-11-08T16:59:59.414246+00:00",
+  "recommendation_sha256": "3e5825558ab39604b3b2a3bbecd52a80039ea9b6d138f1d48aa71e81837a38ba",
+  "score_type": "measured_log_enrichment",
+  "results": [
+    {
+      "candidate_id": 36257,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKNYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:Q32N",
+      "predicted_fitness": 1.7827842235565186,
+      "reason": "A24Y:Q32N，模型预测 1.783（本轮预测值最高）。实验观察：A24W:Q32N 实测 1.698（candidate:35649）；A24Y:Q32R 实测 2.008（variant:36259）；Q32 位无任何单点标签，A24Y 单点亦无标签。假设：在 A24W 背景观察到的 Q32N 叠加效应可转移到 A24Y 背景。局限：Q32N 的收益究竟是‘酰胺特异’还是‘A24W 特异’完全未验证；A24Y 与 Q32N 均缺单点对照，无法计算加性偏离，本候选目前只有模型排序支持。",
+      "measured_fitness": 1.8127610290695928
+    },
+    {
+      "candidate_id": 36335,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATKQFTVTE",
+      "mutations": "A24Y:T51Q",
+      "predicted_fitness": 1.7540075778961182,
+      "reason": "A24Y:T51Q，模型预测 1.754。实验观察：第 51 位单点普遍小幅偏正——T51H 0.517（variant:468756）、T51L 0.733（variant:469044）、T51K 0.522（variant:468948）、T51M 0.606（variant:469140）、T51V 0.587（variant:469716）；同背景下 A24Y:T51L 实测 1.791（candidate:36331）、A24Y:T51H 2.195（variant:36328）。假设：酰胺类替换 Q 落在 T51 高位谱系内。局限：T51Q 单点缺失，A24Y 亦无单点，无法算加性偏离；且第 51 位多种残基单点值彼此接近（0.5–0.73），不能据此推断 Q 的具体幅度。",
+      "measured_fitness": 1.6498646088023772
+    },
+    {
+      "candidate_id": 35965,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVFGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:D40F",
+      "predicted_fitness": 1.7508316040039062,
+      "reason": "A24Y:D40F，模型预测 1.751。实验观察：D40F 单点 0.969（variant:78640）；已有同背景 A24Y:D40N 实测 1.921（variant:35972）；跨背景 A24W:D40H 实测 2.094，相对加性预期 2.434 的描述性偏离约 −0.34（variant:35361，未做显著性检验）。假设：A24Y 背景下芳香类 D40F 仍可与高背景叠加。局限：A24Y 单点无标签，只能与背景总量比较，无法算加性偏离；D40H 的负向偏离只属描述性观察，且候选池中未检索到 A24Y:D40H，无法在本轮做同残基同背景对照。",
+      "measured_fitness": 1.6068472237186862
+    },
+    {
+      "candidate_id": 36330,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATKKFTVTE",
+      "mutations": "A24Y:T51K",
+      "predicted_fitness": 1.735589623451233,
+      "reason": "A24Y:T51K，模型预测 1.736。实验观察：T51K 单点 0.522（variant:468948）；同背景高分记录 A24Y:T51L 1.791（candidate:36331）、A24Y:T51H 2.195（variant:36328）。设计作用：与 A24Y:T51Q、A24Y:T51L、A24Y:T51H 共同构成第 51 位残基谱系（碱性/酰胺/疏水/芳香）检验。局限：A24Y 单点无标签，加性偏离不可算；单背景下的高分不能推广为‘第 51 位任意替换皆有益’的规律。",
+      "measured_fitness": 1.3615089088411219
+    },
+    {
+      "candidate_id": 35941,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDWTKTFTVTE",
+      "mutations": "A24Y:A48W",
+      "predicted_fitness": 1.6434937715530396,
+      "reason": "A24Y:A48W，模型预测 1.643。实验观察：不同背景的同位点记录 A24H:A48Q 实测 2.037（variant:28024）；A48W 单点无标签，A24Y 无标签，训练集高分名单中第 48 位参与的组合仅见 A24H 背景。假设：第 48 位疏水/芳香替换可叠加在 A24Y 上。局限：证据来自另一个 A24 残基身份且是不同残基（Q vs W），不能外推；本候选实质为待验证假设。",
+      "measured_fitness": 1.5844566843932515
+    },
+    {
+      "candidate_id": 36341,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATKTFAVTE",
+      "mutations": "A24Y:T53A",
+      "predicted_fitness": 1.6356706619262695,
+      "reason": "A24Y:T53A，模型预测 1.636。实验观察：T53A 单点 0.004（variant:470004），接近零但不应解释为中性；同背景已实测 A24Y:T53V=1.423（candidate:36357，本组现知最低）；跨背景 A24W:T53I=1.971（variant:35740）。设计作用：在同一 A24Y 背景下比较第 53 位 A/V，配合 A24W:T53V（另一候选）可把‘背景身份’与‘残基身份’部分解耦。局限：A24Y 单点缺失，加性偏离不可算；三点设计仍不能完全分离背景与残基效应的混淆。",
+      "measured_fitness": 1.7346611454624539
+    },
+    {
+      "candidate_id": 471524,
+      "sequence": "MQYKLILNGKTLKGETTTEAADAYTAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "V21A:A24Y",
+      "predicted_fitness": 1.6284650564193726,
+      "reason": "V21A:A24Y，模型预测 1.628。实验观察：V21A 单点 −0.012（variant:471486）；V21A:A24H 实测 2.286（variant:471511，训练集最高分之一），相对 A24H 1.314（variant:27973）与 V21A −0.012 的加性预期，描述性偏离约 +0.98（未做显著性检验）。假设：V21A 的正向组合效应不限于 A24H，也可在 A24Y 出现。局限：A24Y 单点无标签，A24Y 背景下无法计算加性偏离；A24H 单背景的正偏离不能外推到 A24Y，本候选是显式的跨背景可转移性检验。",
+      "measured_fitness": 2.0524766479281347
+    },
+    {
+      "candidate_id": 35359,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAWTAEKVFKQYANDNGVFGEWTYDDATKTFTVTE",
+      "mutations": "A24W:D40F",
+      "predicted_fitness": 1.6240081787109375,
+      "reason": "A24W:D40F，模型预测 1.624。实验观察：两个组成突变均有实测单点——A24W 1.456（variant:35279）与 D40F 0.969（variant:78640），加性预期约 2.425；同背景 A24W:D40H 实测 2.094，相对加性 2.434 的描述性偏离约 −0.34（variant:35361）。假设：D40 位疏水/芳香替换引起的负向偏离可在同背景下用 F 重复（残基身份可替换）。局限：偏离为同一实验背景下的算术差，无重复测量/误差信息，未做显著性检验；即便重复也不能概括为通用上位性规律。",
+      "measured_fitness": 1.7720066014222067
+    },
+    {
+      "candidate_id": 36197,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATITFTVTE",
+      "mutations": "A24Y:K50I",
+      "predicted_fitness": 1.51919424533844,
+      "reason": "A24Y:K50I，模型预测 1.519。实验观察：第 50 位在 A24Y 背景已有多个高分记录——A24Y:K50Q 2.259（variant:36202）、A24Y:K50S 2.145（variant:36204）、A24Y:K50D 1.898（variant:36192）、A24Y:K50R 1.758（candidate:36203）；而 K50Q 单点仅 0.077（variant:278672），提示第 50 位增益主要来自组合而非单点效应。假设：该位点的组合收益不依赖电荷/极性类别，脂肪族 I 也可受益。局限：K50I 与 A24Y 均无单点（K50I 无标签），加性偏离不可算；‘组合而非单点’的判断也只基于 K50Q 一个残基的单点标签，不能推广到 I。",
+      "measured_fitness": 1.6498646088023772
+    },
+    {
+      "candidate_id": 35749,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAWTAEKVFKQYANDNGVDGEWTYDDATKTFVVTE",
+      "mutations": "A24W:T53V",
+      "predicted_fitness": 1.415195107460022,
+      "reason": "A24W:T53V，模型预测 1.415（本批预测最低，作为机制对照保留）。实验观察：两个组成突变均有实测单点——A24W 1.456（variant:35279）、T53V 0.064（variant:470932），加性预期约 1.52；同背景 A24W:T53I 实测 1.971（variant:35740），相对加性预期（1.456−0.275）的描述性偏离约 +0.79；另有 A24Y:T53V=1.423（candidate:36357）。设计作用：固定 A24W 背景比较 I 与 V，检验 +0.79 偏离是 I 特异还是 A24W 背景下第 53 位通性。局限：偏离无显著性检验、为单背景单残基观测；本候选预测值不高，若实测明显低于加性预期，只说明该背景下的组合不符加性，不等于统计显著的上位性。",
+      "measured_fitness": 1.4787163526065477
+    }
+  ],
+  "summary": {
+    "n_evaluated": 10,
+    "mean_measured_fitness": 1.670316381104675,
+    "best_measured_fitness": 2.0524766479281347,
+    "fraction_above_wt": 1.0
+  }
+}

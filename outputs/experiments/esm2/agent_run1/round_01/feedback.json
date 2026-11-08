@@ -1,0 +1,96 @@
+{
+  "model_type": "esm2",
+  "knowledge": false,
+  "experiment_id": "a9bf6b62df82459cad209ea6995542b5",
+  "evaluated_at": "2026-11-08T16:41:28.084991+00:00",
+  "recommendation_sha256": "e38e8dac33c55fdf0f1a4cc76145577b5de77cedc9c325726c1b91ceff7edc3c",
+  "score_type": "measured_log_enrichment",
+  "results": [
+    {
+      "candidate_id": 35373,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAWTAEKVFKQYANDNGVWGEWTYDDATKTFTVTE",
+      "mutations": "A24W:D40W",
+      "predicted_fitness": 1.7642384767532349,
+      "reason": "A24W:D40W。模型预测 1.764，为本轮候选池抽样中的最高值。依据：(1) 训练集实测 A24W:D40H=2.094、A24Y:N37V=2.238，说明 24 位色氨酸可与远端位点形成高富集组合；(2) 单点探针预测中 A24W=1.387、D40H=0.989，D40 是本轮所有次级位点中模型偏好的最强者。待验证假设：24 位芳香侧链与 40 位芳香/大侧链替换可近似叠加。证据局限：A24W:D40H 的高分不能证明 D40H 单点独立有益，也不能外推到 D40W；1.76 属模型输出，非实测，且本批预测普遍低于训练集实测峰值（2.29），提示模型在强变体上存在饱和。",
+      "measured_fitness": 1.6008952171031166
+    },
+    {
+      "candidate_id": 36335,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATKQFTVTE",
+      "mutations": "A24Y:T51Q",
+      "predicted_fitness": 1.7540075778961182,
+      "reason": "A24Y:T51Q。模型预测 1.754。依据：(1) 训练集实测 A24Y:T51H=2.195、A24W:T51F=2.072、A24Y:K50Q=2.259，提示 49–53 段是与 24 位芳香替换相容的次级区；(2) 单点探针 T51H=0.416、T51F=0.446，均高于多数位点。待验证假设：51 位引入极性/亲水侧链可保留 24Y 的富集优势。局限：T51Q 本身无实验数据；已知 51 位高分仅出现在特定组合中，不能拆成单点效应；模型对 24 位家族给分接近，排序分辨力低。",
+      "measured_fitness": 1.6498646088023772
+    },
+    {
+      "candidate_id": 376739,
+      "sequence": "MRYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "Q2R:A24Y",
+      "predicted_fitness": 1.7409404516220093,
+      "reason": "Q2R:A24Y。模型预测 1.741。依据：训练集实测 Q2F:A24W=1.967，显示 N 端第 2 位替换与该位点家族可共存；Q2 远离结合界面核心，假设其通过整体稳定性/表达而非直接接触起作用。局限：Q2F:A24W 的高分不能证明 Q2 单点有益，Q2R 为不同电荷性质替换，正向电荷可能带来与 Q2F 不同的影响；预测值非实测。",
+      "measured_fitness": 1.6971658449449778
+    },
+    {
+      "candidate_id": 36330,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATKKFTVTE",
+      "mutations": "A24Y:T51K",
+      "predicted_fitness": 1.735589623451233,
+      "reason": "A24Y:T51K。模型预测 1.736，与 A24Y:T51Q 构成同一假设的正电荷版本（T51K）。依据同 36335：训练集 A24Y:T51H=2.195、A24W:T51F=2.072 支持 51 位为相容第二区。待验证假设：51 位可容忍正电荷而不破坏富集。局限：T51K 未被实验覆盖；同一假设重复取点会分散十席的信息量，若 51 位实际不具可塑性，两枚候选会同时失败。",
+      "measured_fitness": 1.3615089088411219
+    },
+    {
+      "candidate_id": 373659,
+      "sequence": "MMYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "Q2M:A24Y",
+      "predicted_fitness": 1.6866471767425537,
+      "reason": "Q2M:A24Y。模型预测 1.687。依据：训练集 Q2F:A24W=1.967 为 N 端替换提供了唯一的实验观察；推测 Q2 位点效应主要来自疏水/体积而非具体侧链身份，故取疏水性的 Q2M 作为 Q2F 的邻近检验。局限：Q2F 高分不构成 Q2 单点有益的证明；Q2M 与 Q2F 体积极不相同，若 N 端效应依赖紧凑侧链则会失败；以模型分数排序在本区间不可靠。",
+      "measured_fitness": 2.0175893889276946
+    },
+    {
+      "candidate_id": 113730,
+      "sequence": "MQYKLILNGKTLKGETTTQAVDAYTAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "E19Q:A24Y",
+      "predicted_fitness": 1.674998164176941,
+      "reason": "E19Q:A24Y。模型预测 1.675。依据：第 19 位是本组数据中最稳定的实验热点之一（E19G:A24Y=2.089、E19V:A24Y=2.018、E19P:A24Y=1.989、E19W:A24H=2.204），说明该位点置换普遍与 24 位芳香替换相容；单点探针 E19W=0.263、A24Y=1.634。待验证假设：E19Q 提供较小、极性侧链时同样兼容。局限：上述高分均为双点实测，不能拆分为 E19 单点效应；E19Q 本身未测得，模型的 19 位判别力较弱（E19W 单点仅 0.26）。",
+      "measured_fitness": 2.5294754581801238
+    },
+    {
+      "candidate_id": 36203,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATRTFTVTE",
+      "mutations": "A24Y:K50R",
+      "predicted_fitness": 1.6683084964752197,
+      "reason": "A24Y:K50R。模型预测 1.668。依据：50 位有较强实验支持（A24Y:K50Q=2.259、A24Y:K50S=2.145、A24W:K50N=1.954），且 24Y 与 50 位替换的组合在训练集中反复进入高分榜。待验证假设：50 位保守性正电荷替换（K→R）可保留该增益。局限：K50R 未被实验覆盖；模型对 K50 单点几乎无偏好（K50Q 单点 -0.046），因此该候选主要依赖 24Y 主效应，模型预测的增量信息有限。",
+      "measured_fitness": 1.757548005876343
+    },
+    {
+      "candidate_id": 117903,
+      "sequence": "MQYKLILNGKTLKGETTTYAVDAHTAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "E19Y:A24H",
+      "predicted_fitness": 1.5770200490951538,
+      "reason": "E19Y:A24H。模型预测 1.577。依据：第 19 位芳香/疏水替换在实测高分中反复出现（E19W:A24H=2.204、E19W:A24Y=2.204 附近量级、E19V:A24Y=2.018）；单点探针 A24H=1.364，与 A24Y(1.634)接近。待验证假设：19 位芳香侧链与 24H 组合可达同样水平（即 24 位 Y/W/H 之间存在可替代性）。局限：E19Y 本身无实测；若 24H 与 24Y 的微环境需求不同，跨组合外推会失效；模型预测非实验值。",
+      "measured_fitness": 1.2841398293437267
+    },
+    {
+      "candidate_id": 116531,
+      "sequence": "MQYKLILNGKTLKGETTTVAVDAHTAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "E19V:A24H",
+      "predicted_fitness": 1.5060272216796875,
+      "reason": "E19V:A24H。模型预测 1.506。依据：实测 E19V:A24Y=2.018 是本组数据中对 19 位与 24 位组合最干净的观察之一；本候选把 24Y 换成 24H（单点预测 1.364）做定向外推，可检验 24 位 Y↔H 的可互换性。局限：换位点后不能假定增益保持，属待验证假设；模型对本区间给分被 24 位主效应主导，1.51 不代表优于本批其他候选。",
+      "measured_fitness": 1.2321294081023983
+    },
+    {
+      "candidate_id": 113025,
+      "sequence": "MQYKLILNGKTLKGETTTPAVDAWTAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "E19P:A24W",
+      "predicted_fitness": 1.499947428703308,
+      "reason": "E19P:A24W。模型预测 1.501。依据：实测 E19P:A24Y=1.989 显示脯氨酸替代并非破坏性，反而与 24Y 形成高富集；单点探针 A24W=1.387。待验证假设：19 位脯氨酸的特殊主链效应可与 24W 组合。局限：脯氨酸引入主链构象限制，与更大的 24W 色氨酸可能不相容，这是本候选的主要风险；模型未刻画主链效应，预测值不能用于判断该风险。",
+      "measured_fitness": 1.6086216502683282
+    }
+  ],
+  "summary": {
+    "n_evaluated": 10,
+    "mean_measured_fitness": 1.6738938320390209,
+    "best_measured_fitness": 2.5294754581801238,
+    "fraction_above_wt": 1.0
+  }
+}

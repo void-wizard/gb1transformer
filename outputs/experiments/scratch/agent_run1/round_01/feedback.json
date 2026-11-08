@@ -1,0 +1,96 @@
+{
+  "model_type": "scratch",
+  "knowledge": false,
+  "experiment_id": "0d6f4e0fd0704fa7807f91b1c6517ec7",
+  "evaluated_at": "2026-11-08T14:23:57.057870+00:00",
+  "recommendation_sha256": "e8df393959ff936356eef390fc6cfe521b1f52c55587029d8d35dcdc70a25ded",
+  "score_type": "measured_log_enrichment",
+  "results": [
+    {
+      "candidate_id": 36203,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATRTFTVTE",
+      "mutations": "A24Y:K50R",
+      "predicted_fitness": 1.673166275024414,
+      "reason": "A24Y:K50R。已知实验观察：训练集中 A24Y:K50Q 实测 2.259、A24Y:K50S 2.145、A24W:K50N 1.954，说明第 24 位酪氨酸/色氨酸骨架与第 50 位极性或碱性残基组合时富集偏强。模型预测（非实验值）：1.673，为本轮我实际预测过的候选中最高。证据局限：以上高分均为双点整体效应，不能据此证明 K50R 单点有益；K50R 本身未经实验；模型由已知数据训练，可能对未见的 Arg 取代系统性高估，需实验判定。",
+      "measured_fitness": 1.757548005876343
+    },
+    {
+      "candidate_id": 36385,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKHFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:V29H",
+      "predicted_fitness": 1.6188502311706543,
+      "reason": "A24Y:V29H。已知实验观察：训练集中 A24Y:V29Q 实测 1.916、A24W:V29Q 相关组合亦偏正向，提示 29 位（位于螺旋区附近、邻近 30F/31K）替换可与 24 位芳香取代共存而不破坏结合。模型预测：1.619。证据局限：29 位单点效应在已知数据中未独立验证（位点统计混合了单点与双点），预测属模型外推；预测值不等于实测富集。",
+      "measured_fitness": 1.5847731432216328
+    },
+    {
+      "candidate_id": 35722,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAWTAEKVFKQYANDNGVDGEWTYDDATKKFTVTE",
+      "mutations": "A24W:T51K",
+      "predicted_fitness": 1.6103591918945312,
+      "reason": "A24W:T51K。已知实验观察：第 51 位是明确的共变热点，A24Y:T51H 实测 2.195、A24W:T51F 2.072、A24Y:T51S 1.928，且 51 位在多个 24 位背景下反复出现。模型预测：1.610。证据局限：已知高分搭档为 H/F/S/Y 等极性或芳香残基，Lys 为该位点未见的高分类型，属外推；且无法从 A24Y/A24W 双点数据分离 51 位与 24 位的单独贡献。",
+      "measured_fitness": 1.6498646088023772
+    },
+    {
+      "candidate_id": 36254,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKKYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:Q32K",
+      "predicted_fitness": 1.573258876800537,
+      "reason": "A24Y:Q32K。已知实验观察：A24Y:Q32R 实测 2.008、A24Q:Q32K 1.860，提示 32 位引入碱性残基可改善富集，且与多种 24 位残基相容。模型预测：1.573。证据局限：Lys 与 Arg 化学性质相近但不等价，模型可能受 Q32R 数据牵引而高估 Q32K；双点高分不能拆分为单点效应；预测为模型值。",
+      "measured_fitness": 1.7586674686511763
+    },
+    {
+      "candidate_id": 117246,
+      "sequence": "MQYKLILNGKTLKGETTTWAVDAWTAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "E19W:A24W",
+      "predicted_fitness": 1.550036907196045,
+      "reason": "E19W:A24W。已知实验观察：E19W:A24H 实测 2.204，是训练集中仅次于 V21A:A24H 的高分双点之一；A24W:D40H 1.2.094（2.094）也显示 A24W 骨架富集偏强，故检验将两个高通量单点放在一起是否仍正协同。模型预测：1.550。证据局限：E19W+A24W 这一具体组合未经实验，两个大体积芳香侧链可能存在位阻或上位负效应；E19 位点统计混杂了多种搭档，不能推断 E19W 单独有益。",
+      "measured_fitness": 1.3985501805214708
+    },
+    {
+      "candidate_id": 117903,
+      "sequence": "MQYKLILNGKTLKGETTTYAVDAHTAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "E19Y:A24H",
+      "predicted_fitness": 1.5225300788879395,
+      "reason": "E19Y:A24H。已知实验观察：A24H 骨架在 V21A:A24H（2.286）与 E19W:A24H（2.204）中均处高位，E19 位点被多种取代（W/G/V/D/P/A/F）反复伴随高分，提示该位点具有较强的可变性容忍。模型预测：1.523。证据局限：E19Y 未在已知高分记录中出现，属新搭档外推；E19 位点统计不能证明任一具体取代有益；预测值非实测。",
+      "measured_fitness": 1.2841398293437267
+    },
+    {
+      "candidate_id": 27210,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAFTAEKVFKQYANDNGVDGEWTYDDATKWFTVTE",
+      "mutations": "A24F:T51W",
+      "predicted_fitness": 1.5221824645996094,
+      "reason": "A24F:T51W。已知实验观察：A24F:D40N 实测 1.890、A24W:T51F 2.072、A24F:D40H 通过 24F 骨架显示中等偏强富集，说明较大疏水残基在 24 位可被容忍，51 位容纳芳香残基。模型预测：1.522。证据局限：24F 与 51W 的联合效应完全未测，两个大体积芳香侧链可能产生位阻；预测值属于模型对稀疏组合的外推。",
+      "measured_fitness": 1.3347835621624817
+    },
+    {
+      "candidate_id": 28417,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAHTAEKVFKQYANDNGVDGEWTYDDATKHFTVTE",
+      "mutations": "A24H:T51H",
+      "predicted_fitness": 1.497368574142456,
+      "reason": "A24H:T51H。已知实验观察：A24Y:T51H 实测 2.195 为 51 位最高记录之一，A24H 骨架在最高分双点 V21A:A24H（2.286）中贡献明显，故检验 24H+51H 组合。模型预测：1.497。证据局限：T51H 的高分仅在 A24Y 背景下被观察到，换到 A24H 背景是否保持不可知（上位效应）；组氨酸质子化状态随环境变化，模型难以刻画，预测存在系统偏差风险。",
+      "measured_fitness": 1.6104506402615002
+    },
+    {
+      "candidate_id": 35784,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAWTAEKQFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "A24W:V29Q",
+      "predicted_fitness": 1.4876173734664917,
+      "reason": "A24W:V29Q。已知实验观察：A24Y:V29Q 实测 1.916，且本轮同时检验 A24Y:V29H（预测 1.619）与 A24F:V29H（预测 1.366），可形成同一第二位点在不同 24 位骨架下的对照。模型预测：1.488。证据局限：V29Q 的高分仅见于 A24Y 背景，不能外推为 29 位单点有益；模型对不同 24 位残基的相对排序可能受训练集中各背景样本量不均衡影响。",
+      "measured_fitness": 1.3261501507129052
+    },
+    {
+      "candidate_id": 36355,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATKTFRVTE",
+      "mutations": "A24Y:T53R",
+      "predicted_fitness": 1.4004956483840942,
+      "reason": "A24Y:T53R。已知实验观察：第 53 位与 24 位组合同样富集明显（A24W:T53I 1.971、A24Y:T53K 1.869、A24W:T53G 1.851），是除 51 位外另一个共变热点；选择 R 以检验碱性侧链在该位点的作用。模型预测：1.400，为本批十项中最低，属于按位点覆盖与可检验性纳入的探索性候选。证据局限：预测强度偏低，且 T53R 未直接测过；同位置不同取代的高分不能证明 R 的有效性。",
+      "measured_fitness": 1.5692397211129265
+    }
+  ],
+  "summary": {
+    "n_evaluated": 10,
+    "mean_measured_fitness": 1.527416731066654,
+    "best_measured_fitness": 1.7586674686511763,
+    "fraction_above_wt": 1.0
+  }
+}

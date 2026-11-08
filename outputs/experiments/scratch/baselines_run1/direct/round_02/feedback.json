@@ -1,0 +1,97 @@
+{
+  "model_type": "scratch",
+  "knowledge": false,
+  "experiment_id": "a676692e526743afa9b732f85d1b16a9",
+  "evaluated_at": "2026-11-08T14:21:20.786822+00:00",
+  "recommendation_sha256": "37aa97c4104daf2d12469a0477753f28218c4cee6842951cd7435aff597c6970",
+  "score_type": "measured_log_enrichment",
+  "results": [
+    {
+      "candidate_id": 36330,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATKKFTVTE",
+      "mutations": "A24Y:T51K",
+      "predicted_fitness": 1.7757678031921387,
+      "reason": "从全部尚未实验候选中按模型预测降序选择，同分按 ID 排序",
+      "measured_fitness": 1.3615089088411219
+    },
+    {
+      "candidate_id": 8942,
+      "sequence": "MQYKLILNGKTLKGETTTERVDAYTAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "A20R:A24Y",
+      "predicted_fitness": 1.774400234222412,
+      "reason": "从全部尚未实验候选中按模型预测降序选择，同分按 ID 排序",
+      "measured_fitness": 1.7859231698176374
+    },
+    {
+      "candidate_id": 36393,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKRFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:V29R",
+      "predicted_fitness": 1.7637944221496582,
+      "reason": "从全部尚未实验候选中按模型预测降序选择，同分按 ID 排序",
+      "measured_fitness": 1.7433601413167772
+    },
+    {
+      "candidate_id": 36038,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGAWTYDDATKTFTVTE",
+      "mutations": "A24Y:E42A",
+      "predicted_fitness": 1.7554144859313965,
+      "reason": "从全部尚未实验候选中按模型预测降序选择，同分按 ID 排序",
+      "measured_fitness": 2.0108779543397075
+    },
+    {
+      "candidate_id": 36009,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDMATKTFTVTE",
+      "mutations": "A24Y:D47M",
+      "predicted_fitness": 1.7540552616119385,
+      "reason": "从全部尚未实验候选中按模型预测降序选择，同分按 ID 排序",
+      "measured_fitness": 1.510736661249697
+    },
+    {
+      "candidate_id": 36042,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGGWTYDDATKTFTVTE",
+      "mutations": "A24Y:E42G",
+      "predicted_fitness": 1.7536096572875977,
+      "reason": "从全部尚未实验候选中按模型预测降序选择，同分按 ID 排序",
+      "measured_fitness": 1.4418391755749174
+    },
+    {
+      "candidate_id": 35991,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYNDATKTFTVTE",
+      "mutations": "A24Y:D46N",
+      "predicted_fitness": 1.7523245811462402,
+      "reason": "从全部尚未实验候选中按模型预测降序选择，同分按 ID 排序",
+      "measured_fitness": 1.6354239246475826
+    },
+    {
+      "candidate_id": 36279,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYRAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:T25R",
+      "predicted_fitness": 1.7500433921813965,
+      "reason": "从全部尚未实验候选中按模型预测降序选择，同分按 ID 排序",
+      "measured_fitness": 1.8527060721212998
+    },
+    {
+      "candidate_id": 35951,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANLNGVDGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:D36L",
+      "predicted_fitness": 1.7429673671722412,
+      "reason": "从全部尚未实验候选中按模型预测降序选择，同分按 ID 排序",
+      "measured_fitness": 1.6746218837231426
+    },
+    {
+      "candidate_id": 59539,
+      "sequence": "MQYKLILNGKTLKGETTTEAVEAYTAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "D22E:A24Y",
+      "predicted_fitness": 1.7404804229736328,
+      "reason": "从全部尚未实验候选中按模型预测降序选择，同分按 ID 排序",
+      "measured_fitness": 1.6438200116296617
+    }
+  ],
+  "summary": {
+    "n_evaluated": 10,
+    "mean_measured_fitness": 1.6660817903261544,
+    "best_measured_fitness": 2.0108779543397075,
+    "fraction_above_wt": 1.0
+  },
+  "method": "direct"
+}

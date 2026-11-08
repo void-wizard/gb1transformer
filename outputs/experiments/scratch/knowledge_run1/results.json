@@ -1,0 +1,276 @@
+{
+  "model_type": "scratch",
+  "score_type": "measured_log_enrichment",
+  "metrics": [
+    {
+      "round": 1,
+      "n_evaluated": 10,
+      "mean_measured_fitness": 1.6104700292128218,
+      "best_measured_fitness": 1.7914047810377058,
+      "fraction_above_wt": 1.0,
+      "cumulative_best_fitness": 1.7914047810377058
+    },
+    {
+      "round": 2,
+      "n_evaluated": 10,
+      "mean_measured_fitness": 1.5162557003189931,
+      "best_measured_fitness": 1.8127610290695928,
+      "fraction_above_wt": 1.0,
+      "cumulative_best_fitness": 1.8127610290695928
+    },
+    {
+      "round": 3,
+      "n_evaluated": 10,
+      "mean_measured_fitness": 1.516090551819236,
+      "best_measured_fitness": 1.7586674686511763,
+      "fraction_above_wt": 1.0,
+      "cumulative_best_fitness": 1.8127610290695928
+    }
+  ],
+  "candidates": [
+    {
+      "round": 1,
+      "candidate_id": 35965,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVFGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:D40F",
+      "predicted_fitness": 1.7839040756225586,
+      "measured_fitness": 1.6068472237186862
+    },
+    {
+      "round": 1,
+      "candidate_id": 36331,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATKLFTVTE",
+      "mutations": "A24Y:T51L",
+      "predicted_fitness": 1.7815771102905273,
+      "measured_fitness": 1.7914047810377058
+    },
+    {
+      "round": 1,
+      "candidate_id": 36330,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATKKFTVTE",
+      "mutations": "A24Y:T51K",
+      "predicted_fitness": 1.7759478092193604,
+      "measured_fitness": 1.3615089088411219
+    },
+    {
+      "round": 1,
+      "candidate_id": 36325,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATKEFTVTE",
+      "mutations": "A24Y:T51E",
+      "predicted_fitness": 1.776029109954834,
+      "measured_fitness": 1.6952532746164046
+    },
+    {
+      "round": 1,
+      "candidate_id": 8942,
+      "sequence": "MQYKLILNGKTLKGETTTERVDAYTAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "A20R:A24Y",
+      "predicted_fitness": 1.7744874954223633,
+      "measured_fitness": 1.7859231698176374
+    },
+    {
+      "round": 1,
+      "candidate_id": 35373,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAWTAEKVFKQYANDNGVWGEWTYDDATKTFTVTE",
+      "mutations": "A24W:D40W",
+      "predicted_fitness": 1.6469359397888184,
+      "measured_fitness": 1.6008952171031166
+    },
+    {
+      "round": 1,
+      "candidate_id": 35359,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAWTAEKVFKQYANDNGVFGEWTYDDATKTFTVTE",
+      "mutations": "A24W:D40F",
+      "predicted_fitness": 1.6372849941253662,
+      "measured_fitness": 1.7720066014222067
+    },
+    {
+      "round": 1,
+      "candidate_id": 35722,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAWTAEKVFKQYANDNGVDGEWTYDDATKKFTVTE",
+      "mutations": "A24W:T51K",
+      "predicted_fitness": 1.6103591918945312,
+      "measured_fitness": 1.6498646088023772
+    },
+    {
+      "round": 1,
+      "candidate_id": 26241,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAETAEKVFKQYANDNGVYGEWTYDDATKTFTVTE",
+      "mutations": "A24E:D40Y",
+      "predicted_fitness": 1.6082923412322998,
+      "measured_fitness": 1.4467039165001314
+    },
+    {
+      "round": 1,
+      "candidate_id": 28066,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAHTAEKVFKQYANDNGVVGEWTYDDATKTFTVTE",
+      "mutations": "A24H:D40V",
+      "predicted_fitness": 1.540917158126831,
+      "measured_fitness": 1.3942925902688297
+    },
+    {
+      "round": 2,
+      "candidate_id": 36393,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKRFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:V29R",
+      "predicted_fitness": 1.7638804912567139,
+      "measured_fitness": 1.7433601413167772
+    },
+    {
+      "round": 2,
+      "candidate_id": 36335,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATKQFTVTE",
+      "mutations": "A24Y:T51Q",
+      "predicted_fitness": 1.6801378726959229,
+      "measured_fitness": 1.6498646088023772
+    },
+    {
+      "round": 2,
+      "candidate_id": 36203,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATRTFTVTE",
+      "mutations": "A24Y:K50R",
+      "predicted_fitness": 1.673166275024414,
+      "measured_fitness": 1.757548005876343
+    },
+    {
+      "round": 2,
+      "candidate_id": 36257,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKNYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:Q32N",
+      "predicted_fitness": 1.6484007835388184,
+      "measured_fitness": 1.8127610290695928
+    },
+    {
+      "round": 2,
+      "candidate_id": 36205,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATTTFTVTE",
+      "mutations": "A24Y:K50T",
+      "predicted_fitness": 1.593625783920288,
+      "measured_fitness": 1.3837897649383504
+    },
+    {
+      "round": 2,
+      "candidate_id": 36242,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDTGVDGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:N37T",
+      "predicted_fitness": 1.419577956199646,
+      "measured_fitness": 0.7519230155964185
+    },
+    {
+      "round": 2,
+      "candidate_id": 35974,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVQGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:D40Q",
+      "predicted_fitness": 1.5713121891021729,
+      "measured_fitness": 1.5307649172612467
+    },
+    {
+      "round": 2,
+      "candidate_id": 36128,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNSVDGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:G38S",
+      "predicted_fitness": 1.5868756771087646,
+      "measured_fitness": 1.5786601625105854
+    },
+    {
+      "round": 2,
+      "candidate_id": 28290,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAHTAEKVFKQYANDNGVDGEWTYDDATQTFTVTE",
+      "mutations": "A24H:K50Q",
+      "predicted_fitness": 1.2883517742156982,
+      "measured_fitness": 1.4643633990910427
+    },
+    {
+      "round": 2,
+      "candidate_id": 35635,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAWTAEKVFKQYANDVGVDGEWTYDDATKTFTVTE",
+      "mutations": "A24W:N37V",
+      "predicted_fitness": 0.9954314231872559,
+      "measured_fitness": 1.4895219587271977
+    },
+    {
+      "round": 3,
+      "candidate_id": 36206,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATVTFTVTE",
+      "mutations": "A24Y:K50V",
+      "predicted_fitness": 1.593519687652588,
+      "measured_fitness": 1.7189426192787802
+    },
+    {
+      "round": 3,
+      "candidate_id": 36197,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATITFTVTE",
+      "mutations": "A24Y:K50I",
+      "predicted_fitness": 1.4858670234680176,
+      "measured_fitness": 1.6498646088023772
+    },
+    {
+      "round": 3,
+      "candidate_id": 36198,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATLTFTVTE",
+      "mutations": "A24Y:K50L",
+      "predicted_fitness": 1.3410371541976929,
+      "measured_fitness": 1.629641472684334
+    },
+    {
+      "round": 3,
+      "candidate_id": 36254,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKKYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:Q32K",
+      "predicted_fitness": 1.573258876800537,
+      "measured_fitness": 1.7586674686511763
+    },
+    {
+      "round": 3,
+      "candidate_id": 36255,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKLYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:Q32L",
+      "predicted_fitness": 1.5782718658447266,
+      "measured_fitness": 1.6498646088023772
+    },
+    {
+      "round": 3,
+      "candidate_id": 36236,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDLGVDGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:N37L",
+      "predicted_fitness": 1.4001299142837524,
+      "measured_fitness": 1.5067637651617038
+    },
+    {
+      "round": 3,
+      "candidate_id": 36239,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDQGVDGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:N37Q",
+      "predicted_fitness": 1.2908655405044556,
+      "measured_fitness": 0.927041660096315
+    },
+    {
+      "round": 3,
+      "candidate_id": 36394,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKSFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:V29S",
+      "predicted_fitness": 1.659677267074585,
+      "measured_fitness": 1.7085201633836882
+    },
+    {
+      "round": 3,
+      "candidate_id": 35651,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAWTAEKVFKRYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "A24W:Q32R",
+      "predicted_fitness": 1.3812386989593506,
+      "measured_fitness": 1.3985501805214708
+    },
+    {
+      "round": 3,
+      "candidate_id": 35627,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAWTAEKVFKQYANDIGVDGEWTYDDATKTFTVTE",
+      "mutations": "A24W:N37I",
+      "predicted_fitness": 1.1919572353363037,
+      "measured_fitness": 1.2130489708101366
+    }
+  ],
+  "content": "# 虚拟实验结果\n\n模型：scratch\n\nfitness 为 WT 归一化的对数富集值；预测值与实验测量值分列展示。\n\n| 轮次 | 候选数 | 真实均值 | 当轮最佳 | 累计最佳 | 高于 WT 的比例 |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| 1 | 10 | 1.610470 | 1.791405 | 1.791405 | 1.000000 |\n| 2 | 10 | 1.516256 | 1.812761 | 1.812761 | 1.000000 |\n| 3 | 10 | 1.516091 | 1.758667 | 1.812761 | 1.000000 |\n\n| 轮次 | 候选 ID | 突变 | 完整序列 | 预测 fitness | 真实 fitness |\n| --- | --- | --- | --- | ---: | ---: |\n| 1 | 35965 | A24Y:D40F | MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVFGEWTYDDATKTFTVTE | 1.783904 | 1.606847 |\n| 1 | 36331 | A24Y:T51L | MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATKLFTVTE | 1.781577 | 1.791405 |\n| 1 | 36330 | A24Y:T51K | MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATKKFTVTE | 1.775948 | 1.361509 |\n| 1 | 36325 | A24Y:T51E | MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATKEFTVTE | 1.776029 | 1.695253 |\n| 1 | 8942 | A20R:A24Y | MQYKLILNGKTLKGETTTERVDAYTAEKVFKQYANDNGVDGEWTYDDATKTFTVTE | 1.774487 | 1.785923 |\n| 1 | 35373 | A24W:D40W | MQYKLILNGKTLKGETTTEAVDAWTAEKVFKQYANDNGVWGEWTYDDATKTFTVTE | 1.646936 | 1.600895 |\n| 1 | 35359 | A24W:D40F | MQYKLILNGKTLKGETTTEAVDAWTAEKVFKQYANDNGVFGEWTYDDATKTFTVTE | 1.637285 | 1.772007 |\n| 1 | 35722 | A24W:T51K | MQYKLILNGKTLKGETTTEAVDAWTAEKVFKQYANDNGVDGEWTYDDATKKFTVTE | 1.610359 | 1.649865 |\n| 1 | 26241 | A24E:D40Y | MQYKLILNGKTLKGETTTEAVDAETAEKVFKQYANDNGVYGEWTYDDATKTFTVTE | 1.608292 | 1.446704 |\n| 1 | 28066 | A24H:D40V | MQYKLILNGKTLKGETTTEAVDAHTAEKVFKQYANDNGVVGEWTYDDATKTFTVTE | 1.540917 | 1.394293 |\n| 2 | 36393 | A24Y:V29R | MQYKLILNGKTLKGETTTEAVDAYTAEKRFKQYANDNGVDGEWTYDDATKTFTVTE | 1.763880 | 1.743360 |\n| 2 | 36335 | A24Y:T51Q | MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATKQFTVTE | 1.680138 | 1.649865 |\n| 2 | 36203 | A24Y:K50R | MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATRTFTVTE | 1.673166 | 1.757548 |\n| 2 | 36257 | A24Y:Q32N | MQYKLILNGKTLKGETTTEAVDAYTAEKVFKNYANDNGVDGEWTYDDATKTFTVTE | 1.648401 | 1.812761 |\n| 2 | 36205 | A24Y:K50T | MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATTTFTVTE | 1.593626 | 1.383790 |\n| 2 | 36242 | A24Y:N37T | MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDTGVDGEWTYDDATKTFTVTE | 1.419578 | 0.751923 |\n| 2 | 35974 | A24Y:D40Q | MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVQGEWTYDDATKTFTVTE | 1.571312 | 1.530765 |\n| 2 | 36128 | A24Y:G38S | MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNSVDGEWTYDDATKTFTVTE | 1.586876 | 1.578660 |\n| 2 | 28290 | A24H:K50Q | MQYKLILNGKTLKGETTTEAVDAHTAEKVFKQYANDNGVDGEWTYDDATQTFTVTE | 1.288352 | 1.464363 |\n| 2 | 35635 | A24W:N37V | MQYKLILNGKTLKGETTTEAVDAWTAEKVFKQYANDVGVDGEWTYDDATKTFTVTE | 0.995431 | 1.489522 |\n| 3 | 36206 | A24Y:K50V | MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATVTFTVTE | 1.593520 | 1.718943 |\n| 3 | 36197 | A24Y:K50I | MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATITFTVTE | 1.485867 | 1.649865 |\n| 3 | 36198 | A24Y:K50L | MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATLTFTVTE | 1.341037 | 1.629641 |\n| 3 | 36254 | A24Y:Q32K | MQYKLILNGKTLKGETTTEAVDAYTAEKVFKKYANDNGVDGEWTYDDATKTFTVTE | 1.573259 | 1.758667 |\n| 3 | 36255 | A24Y:Q32L | MQYKLILNGKTLKGETTTEAVDAYTAEKVFKLYANDNGVDGEWTYDDATKTFTVTE | 1.578272 | 1.649865 |\n| 3 | 36236 | A24Y:N37L | MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDLGVDGEWTYDDATKTFTVTE | 1.400130 | 1.506764 |\n| 3 | 36239 | A24Y:N37Q | MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDQGVDGEWTYDDATKTFTVTE | 1.290866 | 0.927042 |\n| 3 | 36394 | A24Y:V29S | MQYKLILNGKTLKGETTTEAVDAYTAEKSFKQYANDNGVDGEWTYDDATKTFTVTE | 1.659677 | 1.708520 |\n| 3 | 35651 | A24W:Q32R | MQYKLILNGKTLKGETTTEAVDAWTAEKVFKRYANDNGVDGEWTYDDATKTFTVTE | 1.381239 | 1.398550 |\n| 3 | 35627 | A24W:N37I | MQYKLILNGKTLKGETTTEAVDAWTAEKVFKQYANDIGVDGEWTYDDATKTFTVTE | 1.191957 | 1.213049 |\n\n指标定义：真实均值、当轮最佳分别为本轮测量值的平均值、最大值；累计最佳为截至本轮全部测量值的最大值；高于 WT 的比例为真实 fitness > 0 的候选占比。\n",
+  "knowledge": true,
+  "experiment_id": "31bac64d18974ea082c75ef1a7f17a8e",
+  "evidence_sha256": "ff2215f4097597c5e66fa2069675806bf8e9ca82e60d643dcfe3bcd08d02d231"
+}

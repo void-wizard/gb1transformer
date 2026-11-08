@@ -1,0 +1,8 @@
+{
+  "model_type": "esm2",
+  "rounds": 3,
+  "top_k": 10,
+  "predictor_update": "fixed",
+  "knowledge": false,
+  "experiment_id": "a9bf6b62df82459cad209ea6995542b5"
+}

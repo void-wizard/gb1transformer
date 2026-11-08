@@ -1,0 +1,96 @@
+{
+  "model_type": "scratch",
+  "knowledge": true,
+  "experiment_id": "31bac64d18974ea082c75ef1a7f17a8e",
+  "evaluated_at": "2026-11-08T14:28:59.190175+00:00",
+  "recommendation_sha256": "fe19832eda562f0a7a794ed02c8ed847642b306689cbe570b372f1aad0378ea8",
+  "score_type": "measured_log_enrichment",
+  "results": [
+    {
+      "candidate_id": 36393,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKRFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:V29R",
+      "predicted_fitness": 1.7638804912567139,
+      "reason": "A24Y:V29R。实验观察：V29R 单点实测 0.991（variant:491321，data/splits/train.csv），是第 29 位已标注单点中较高者（V29K 0.820/variant:488237，V29L 0.244/488751，V29G −0.032/486695）；同一 A24Y 背景另有 A24Y:V29Q 实测 1.916（variant:36392）。模型预测：1.764，为本批最高。假设：第 29 位正向单点收益在 A24Y 背景下可保留，V29R 组合量级接近已知 V29Q。局限：A24Y 单点标签缺失，无法计算加性预期；双点分数属完整变体，不能拆成两个单点的独立贡献；无重复测量/误差信息，即便日后偏离加性也不能判定统计显著。",
+      "measured_fitness": 1.7433601413167772
+    },
+    {
+      "candidate_id": 36335,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATKQFTVTE",
+      "mutations": "A24Y:T51Q",
+      "predicted_fitness": 1.6801378726959229,
+      "reason": "A24Y:T51Q。实验观察：A24Y 背景下 T51 已有完整可比序列——T51H 2.195（variant:36328）、T51F 1.935（36326）、T51S 1.928（36337）、T51L 1.791（本轮 36331）、T51E 1.695（36325）、T51K 1.362（36330）；T51Q 单点无标签。模型预测：1.680。假设：T51 位在 A24Y 背景中存在残基身份效应，Q 这类极性中等体积替换可落在 1.7 左右、明显高于 T51K。局限：T51Q 单点缺失不能算加性；模型对同背景细微差异缺乏区分力（上轮 A24Y:T51L 与 T51K 预测仅差约 0.006，实测差约 0.43），故本预测的排序含意很弱。",
+      "measured_fitness": 1.6498646088023772
+    },
+    {
+      "candidate_id": 36203,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATRTFTVTE",
+      "mutations": "A24Y:K50R",
+      "predicted_fitness": 1.673166275024414,
+      "reason": "A24Y:K50R。实验观察：第 50 位已标注单点均接近零（K50Q 0.077/variant:278672，K50V 0.063/279132，K50L −0.117/278212），但 A24Y 背景下 A24Y:K50Q 实测 2.259（variant:36202）、A24Y:K50S 2.145（36204），接近训练集最高分区，提示该组合的收益是背景依赖而非单点效应；K50R 单点无标签。模型预测：1.673。假设：第 50 位的组合收益不限于 Q/S，正电的 R 亦可被 A24Y 背景容纳。局限：K50R 与 A24Y 均无单点对照，加性预期不可算；单点近零不能被解读为中性，A24Y:K50Q 的高分也不能归因于 K50Q 本身有益。",
+      "measured_fitness": 1.757548005876343
+    },
+    {
+      "candidate_id": 36257,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKNYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:Q32N",
+      "predicted_fitness": 1.6484007835388184,
+      "reason": "A24Y:Q32N。实验观察：Q32N 单点 0.490（variant:387866），为第 32 位已标注单点最高（Q32R 0.316/388780，Q32K 0.249/386495，Q32I −0.934/386038，Q32P −3.979/388323）；A24Y:Q32R 实测 2.008（variant:36259）。模型预测：1.648。假设：位点内单点最优的 N 在 A24Y 背景下至少可与已知 R 组合（2.008）相当。局限：A24Y 单点缺失，无法把 2.008 与 1.648 拆解为两个单点贡献；A24Y:Q32R 的存在不能证明 Q32R 单点有益，也不能作为 Q32N 的定量外推。",
+      "measured_fitness": 1.8127610290695928
+    },
+    {
+      "candidate_id": 36205,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATTTFTVTE",
+      "mutations": "A24Y:K50T",
+      "predicted_fitness": 1.593625783920288,
+      "reason": "A24Y:K50T。实验观察：与 K50R 同一背景、同一位置构成受控残基对照；该位置组合在训练集中处高位（A24Y:K50Q 2.259/variant:36202，A24Y:K50S 2.145/36204），而单点近中性（K50Q 0.077/278672，K50V 0.063/279132）；K50T 单点无标签。模型预测：1.594（略低于 K50R 的 1.673，差值远小于模型在上一轮表现出的分辨力）。假设：若 K50T 与 K50R 实测接近，则支持“第 50 位收益以背景为主、对残基性质弱依赖”。局限：两条均未实测；双点不能拆分单点效应；无重复测量与测量误差信息，残基性质只能作为假设来源。",
+      "measured_fitness": 1.3837897649383504
+    },
+    {
+      "candidate_id": 36242,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDTGVDGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:N37T",
+      "predicted_fitness": 1.419577956199646,
+      "reason": "A24Y:N37T。实验观察：第 37 位单点普遍强负——N37V −1.291（variant:344908）、N37Q −1.272（343460）、N37F −2.859（340565）、N37P −5.184（343098）、N37S −0.518（344184），但 A24Y:N37V 实测 2.238（variant:36243），呈明显背景依赖；N37T 单点无标签。模型预测：1.420。假设：第 37 位在 A24Y 背景中可被“挽救”，且不限于 V（T 亦能维持正富集）。局限：A24Y 单点缺失，背景依赖只能描述不能量化；只有同一实验背景下的完整对照才能判定偏离加性，现有数据不足以宣称上位性；N37V 的高分不能推广为“N37 任意替换有益”。",
+      "measured_fitness": 0.7519230155964185
+    },
+    {
+      "candidate_id": 35974,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVQGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:D40Q",
+      "predicted_fitness": 1.5713121891021729,
+      "reason": "A24Y:D40Q。实验观察：D40 单点多为小幅正向（D40W 1.214/variant:82910，D40H 0.978/79250，D40F 0.969/78640），D40Q 仅 −0.039（81385）；A24Y 背景下 A24Y:D40N 实测 1.921（variant:35972），而本轮 A24Y:D40F 实测仅 1.607（35965），说明该位置组合并非随单点大小单调。模型预测：1.571。假设：Q 作为极性对照，用于检验“芳香侧链并非第 40 位组合收益的必要条件”。局限：D40Q 单点接近零不等于中性；A24Y 无单点标签，加性预期不可算；本轮同背景实测显示第 40 位路线整体低于第 50/51 位路线。",
+      "measured_fitness": 1.5307649172612467
+    },
+    {
+      "candidate_id": 36128,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNSVDGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:G38S",
+      "predicted_fitness": 1.5868756771087646,
+      "reason": "A24Y:G38S。实验观察：G38 单点多数不利（G38S −0.521/variant:164982，G38C −0.609/160523，G38Q −0.788/164296，G38I −1.575/162238），G38F 无单点标签，而 A24Y:G38F 实测 2.006（variant:36118）。模型预测：1.587。假设：第 38 位同样存在背景依赖，小极性残基 S 不会复现 F 的 2.0 水平但可维持正富集；与 N37 系列一起检验“单点负向、组合却正”的模式是否在第 37–38 区域普遍。局限：G38S 单点负向，组合是否被背景挽救完全待验证；无 A24Y 单点不能算加性；G38F 组合高分不能说明 G38S 亦高，双点分数不可拆为单点效应。",
+      "measured_fitness": 1.5786601625105854
+    },
+    {
+      "candidate_id": 28290,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAHTAEKVFKQYANDNGVDGEWTYDDATQTFTVTE",
+      "mutations": "A24H:K50Q",
+      "predicted_fitness": 1.2883517742156982,
+      "reason": "A24H:K50Q（跨背景对照）。实验观察：A24H 单点 1.314（variant:27973）、K50Q 单点 0.077（variant:278672），可见单点之和约 1.39——这仅是预设的加性预期，不是实测偏离；A24H 背景已知可与第二突变叠加，如 A24H:A48Q 2.037（variant:28024）、A24H:D40W 1.924（28067）。模型预测：1.288，明显低于 A24Y:K50Q 的 2.259。假设：第 50 位组合收益对第 24 位残基身份有选择性（Y 强于 H），若实测低于 A24Y 系列即支持该假设。局限：同一实验背景下的 A24H:K50Q 实测尚不存在，无法判断组合是否偏离加性；模型可能压缩背景间差异，预测差值不宜当作定量预期。",
+      "measured_fitness": 1.4643633990910427
+    },
+    {
+      "candidate_id": 35635,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAWTAEKVFKQYANDVGVDGEWTYDDATKTFTVTE",
+      "mutations": "A24W:N37V",
+      "predicted_fitness": 0.9954314231872559,
+      "reason": "A24W:N37V（有意加入的低预测校准点）。实验观察：A24W 单点 1.456（variant:35279）、N37V 单点 −1.291（variant:344908），两者之和约 0.17 仅为预设加性预期；A24Y:N37V 实测 2.238（variant:36243）。模型预测：0.995，为本批最低。假设：N37V 的高组合是否依赖 A24Y 而非 A24W；若实测远高于 0.17，则第 37 位的背景依赖不限于单一第 24 位残基，同时提示模型在 A24W 背景上可能过度压低。局限：本候选预期收益低于其余 9 条，属假设检验/模型校准用途；无重复测量与误差信息，不能据此断言 A24W 与 N37V 之间存在统计显著的上位性。",
+      "measured_fitness": 1.4895219587271977
+    }
+  ],
+  "summary": {
+    "n_evaluated": 10,
+    "mean_measured_fitness": 1.5162557003189931,
+    "best_measured_fitness": 1.8127610290695928,
+    "fraction_above_wt": 1.0
+  }
+}

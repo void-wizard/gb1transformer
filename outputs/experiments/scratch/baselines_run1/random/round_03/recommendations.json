@@ -1,0 +1,80 @@
+{
+  "model_type": "scratch",
+  "method": "random",
+  "knowledge": false,
+  "experiment_id": "ff261f66046b4ec7a7a3a78cb612a00d",
+  "created_at": "2026-11-08T14:20:43.963863+00:00",
+  "recommendations": [
+    {
+      "candidate_id": 399240,
+      "sequence": "MQYKLILNGKLLKGETTTERVDAATAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "T11L:A20R",
+      "predicted_fitness": 0.2381695806980133,
+      "reason": "固定种子对公开候选均匀无放回抽样；模型预测不参与选择"
+    },
+    {
+      "candidate_id": 257770,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAATAEKVFWQYANDNGVDGEWTYDDATITFTVTE",
+      "mutations": "K31W:K50I",
+      "predicted_fitness": -5.221355438232422,
+      "reason": "固定种子对公开候选均匀无放回抽样；模型预测不参与选择"
+    },
+    {
+      "candidate_id": 99564,
+      "sequence": "MQYKLILNGKTLKGPTTTEAVDAATAEKVFKQYANDNGVDGEWVYDDATKTFTVTE",
+      "mutations": "E15P:T44V",
+      "predicted_fitness": -3.831280469894409,
+      "reason": "固定种子对公开候选均匀无放回抽样；模型预测不参与选择"
+    },
+    {
+      "candidate_id": 215143,
+      "sequence": "MQYKLILNGMTLKGETTTEAVDAATAEKVFKQYYNDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "K10M:A34Y",
+      "predicted_fitness": -4.259458541870117,
+      "reason": "固定种子对公开候选均匀无放回抽样；模型预测不参与选择"
+    },
+    {
+      "candidate_id": 139478,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAATAEKVNKQYANDNGVDGEWTYDDATKTFTVME",
+      "mutations": "F30N:T55M",
+      "predicted_fitness": -3.8928756713867188,
+      "reason": "固定种子对公开候选均匀无放回抽样；模型预测不参与选择"
+    },
+    {
+      "candidate_id": 496511,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAATAEKVFKQYANDNGKLGEWTYDDATKTFTVTE",
+      "mutations": "V39K:D40L",
+      "predicted_fitness": -3.7567555904388428,
+      "reason": "固定种子对公开候选均匀无放回抽样；模型预测不参与选择"
+    },
+    {
+      "candidate_id": 410969,
+      "sequence": "MQYKLILNGKTLKGEFTTEAVDAATAEKVFKQYANINGVDGEWTYDDATKTFTVTE",
+      "mutations": "T16F:D36I",
+      "predicted_fitness": -0.13559064269065857,
+      "reason": "固定种子对公开候选均匀无放回抽样；模型预测不参与选择"
+    },
+    {
+      "candidate_id": 440680,
+      "sequence": "MQYKLILNGKTLKGETTHEFVDAATAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "T18H:A20F",
+      "predicted_fitness": -1.4728893041610718,
+      "reason": "固定种子对公开候选均匀无放回抽样；模型预测不参与选择"
+    },
+    {
+      "candidate_id": 103903,
+      "sequence": "MQYKLILNGKTLKGWTTTWAVDAATAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "E15W:E19W",
+      "predicted_fitness": 0.5916647911071777,
+      "reason": "固定种子对公开候选均匀无放回抽样；模型预测不参与选择"
+    },
+    {
+      "candidate_id": 204212,
+      "sequence": "MQYKLTLNGKTLKGETTTEAVDAATAEKEFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "I6T:V29E",
+      "predicted_fitness": -1.576040267944336,
+      "reason": "固定种子对公开候选均匀无放回抽样；模型预测不参与选择"
+    }
+  ],
+  "selection_rule": "固定种子对公开候选均匀无放回抽样；模型预测不参与选择"
+}

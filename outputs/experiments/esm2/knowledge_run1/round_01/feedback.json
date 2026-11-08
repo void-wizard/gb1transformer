@@ -1,0 +1,96 @@
+{
+  "model_type": "esm2",
+  "knowledge": true,
+  "experiment_id": "2c41140ba7db48178640657619e4ee84",
+  "evaluated_at": "2026-11-08T16:57:16.283193+00:00",
+  "recommendation_sha256": "a398fe4260dec2df021e1b24124ec1f8a23f8dbd8cbf4a49ecae2ec38f2db686",
+  "score_type": "measured_log_enrichment",
+  "results": [
+    {
+      "candidate_id": 36331,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATKLFTVTE",
+      "mutations": "A24Y:T51L",
+      "predicted_fitness": 1.767542839050293,
+      "reason": "A24Y:T51L，模型预测 1.768（本批最高）。实验观察：A24Y 无可用单点标签（未知），但 A24Y 背景组合已知偏高（A24Y:K50Q 2.259，variant:36202；A24Y:T51H 2.195，variant:36328）；T51 位点实测可容忍替换（T51H 单点 0.517，variant:468756），提示第51位不是严格保守位。假设：β-分支疏水残基（L）在 A24Y 背景下优于 H。局限：T51L 单点与 A24Y 单点均无实测，无法算加性偏离；预测值已被校准为对双点低估，仅作排序。",
+      "measured_fitness": 1.7914047810377058
+    },
+    {
+      "candidate_id": 36313,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDAMKTFTVTE",
+      "mutations": "A24Y:T49M",
+      "predicted_fitness": 1.695990800857544,
+      "reason": "A24Y:T49M，模型预测 1.696。实验观察：A24Y 组合在训练集中占据高分主体（variant:36202、variant:36328、variant:36259），但 T49 位点没有任何已揭示单点标签（未知）。假设：螺旋/转角区的第49位换成中等体积疏水残基可与 A24Y 叠加。局限：两个组成突变都缺单点对照，无法判断组合是否偏离加性；候选仅由模型排序支持，属待验证假设。",
+      "measured_fitness": 1.696617697506732
+    },
+    {
+      "candidate_id": 4832,
+      "sequence": "MQYKLILNGKTLKGETTTEKVDAYTAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "A20K:A24Y",
+      "predicted_fitness": 1.6912387609481812,
+      "reason": "A20K:A24Y，模型预测 1.691（A20 系列中最高，同批 A20I:A24W 0.814、A20E:A24H 0.676 明显更低）。实验观察：A24Y 组合背景实测偏高（variant:36202/36328/36259），而 A20 位点在已揭示数据中无单点标签（未知），训练集高分名单中也未见 A20 参与的组合。假设：第20位正电荷与 A24Y 存在正向上位。局限：A20K 完全无单点证据，该假设风险较高；模型对双点存在系统性低估，但排序可靠性未在第一轮验证。",
+      "measured_fitness": 1.6480780964915798
+    },
+    {
+      "candidate_id": 36255,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKLYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:Q32L",
+      "predicted_fitness": 1.6747431755065918,
+      "reason": "A24Y:Q32L，模型预测 1.675。实验观察：同一位置的 A24Y:Q32R 实测 2.008（variant:36259），说明第32位在 A24Y 背景下可容许可观替换；Q32L 单点无标签（未知）。假设：疏水替换（L）与碱性替换（R）同样能与 A24Y 叠加。局限：Q32R 的高分不能证明 Q32L 有益，二者性质差异大（电荷 vs 疏水），需实测判断。",
+      "measured_fitness": 1.6498646088023772
+    },
+    {
+      "candidate_id": 36203,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATRTFTVTE",
+      "mutations": "A24Y:K50R",
+      "predicted_fitness": 1.6683084964752197,
+      "reason": "A24Y:K50R，模型预测 1.668。实验观察：K50 位点有明确的正向背景证据——A24Y:K50Q 实测 2.259（variant:36202）、A24Y:K50S 2.145（variant:36204），而 K50Q 单点仅 0.077（variant:278672），提示增益主要来自组合而非 K50 单点效果。假设：保守的碱性替换 K50R 也能在 A24Y 背景下获益。局限：K50R 单点无标签，组合是否偏离加性无法计算；高分组合不能拆分为单点贡献。",
+      "measured_fitness": 1.757548005876343
+    },
+    {
+      "candidate_id": 36357,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATKTFVVTE",
+      "mutations": "A24Y:T53V",
+      "predicted_fitness": 1.655940294265747,
+      "reason": "A24Y:T53V，模型预测 1.656。实验观察：T53I 单点实测 −0.275（variant:470410，略偏负），但 A24W:T53I 组合实测 1.971，相对加性预期偏离 +0.79（variant:35740，未做显著性检验），说明第53位可能在组合背景中被“救回”。假设：A24Y 背景 + 第53位 β-分支疏水替换可重复该正偏离。局限：偏离仅在一个 A24W 背景中见过，A24Y 背景无任何第53位数据；单背景偏离不构成统计显著上位性。",
+      "measured_fitness": 1.4225753601084608
+    },
+    {
+      "candidate_id": 35649,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAWTAEKVFKNYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "A24W:Q32N",
+      "predicted_fitness": 1.6020065546035767,
+      "reason": "A24W:Q32N，模型预测 1.602（A24W 区段最高，优于 A24W:Q32R 1.460、A24W:T25H 1.440）。实验观察：A24W 是实测最好的单点（1.456，variant:35279），且已见 A24W:D36K 2.047（加性偏离 +0.32，variant:35344）、A24W:T53I 1.971（偏离 +0.79，variant:35740）；A24W:D40H 2.094 但偏离 −0.34（variant:35361），说明伙伴位点效应方向不一。Q32N 单点无标签。假设：极性酰胺替换可在 A24W 背景上叠加。局限：无法计算加性偏离；A24W 已有多个背景测量，但 Q32 从未被测。",
+      "measured_fitness": 1.6980667106202547
+    },
+    {
+      "candidate_id": 28417,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAHTAEKVFKQYANDNGVDGEWTYDDATKHFTVTE",
+      "mutations": "A24H:T51H",
+      "predicted_fitness": 1.5466737747192383,
+      "reason": "A24H:T51H，模型预测 1.547。这是本批唯一两个组成突变都有实测单点的候选，可直接做加性检验：A24H 1.314（variant:27973）+ T51H 0.517（variant:468756）→ 加性预期约 1.83（未做显著性检验）。同位置对照 A24Y:T51H 实测 2.195（variant:36328）。假设：A24H/T51H 组合接近或超过加性预期。局限：A24Y 的 T51H 背景高分不能外推到 A24H；加性偏离必须等本轮实测后才可判断。",
+      "measured_fitness": 1.6104506402615002
+    },
+    {
+      "candidate_id": 27446,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAGTAEKVFKQYANDNGVHGEWTYDDATKTFTVTE",
+      "mutations": "A24G:D40H",
+      "predicted_fitness": 1.4055778980255127,
+      "reason": "A24G:D40H，模型预测 1.406。两个单点均有实测：A24G 0.901（variant:27364）、D40H 0.978（variant:79250）→ 加性预期约 1.88（未做显著性检验）。已有背景对照：A24W:D40H 实测 2.094，相对加性预期 2.434 偏离 −0.34（variant:35361）；A20C:D40H、A23G:D40H 等组合在训练集中无高分记录。假设：D40H 的增益在较弱 A24 背景（G）上仍成立，且组合偏离方向可能与 A24W 背景一致（负偏离）。局限：A24G 与 A24W 的背景差异可能改变 D40H 效果；偏离数值不代表统计显著。",
+      "measured_fitness": 1.3885500971868876
+    },
+    {
+      "candidate_id": 36394,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKSFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:V29S",
+      "predicted_fitness": 1.6339797973632812,
+      "reason": "A24Y:V29S，模型预测 1.634。实验观察：A24Y:V29Q 实测 1.916（variant:36392），而 A24Y:E27V 是已知最低分之一（−7.19，variant:36035，E27V 单点 −5.87，variant:127395），提示 A24Y 背景下邻近位点的替换方向高度依赖具体残基。V29S 单点无标签。假设：小体积极性替换（S）比酰胺（Q）更适合第29位。局限：V29Q 的高分不能推广到 V29S；两个组成突变缺单点对照，仅由模型排序支持。",
+      "measured_fitness": 1.7085201633836882
+    }
+  ],
+  "summary": {
+    "n_evaluated": 10,
+    "mean_measured_fitness": 1.637167616127553,
+    "best_measured_fitness": 1.7914047810377058,
+    "fraction_above_wt": 1.0
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "model_type": "scratch",
+  "knowledge": true,
+  "experiment_id": "31bac64d18974ea082c75ef1a7f17a8e",
+  "evaluated_at": "2026-11-08T14:24:31.111167+00:00",
+  "recommendation_sha256": "34b3706785938d427de3283b6be595898740c5b1f97798cbd58420b3b5a7fe83",
+  "score_type": "measured_log_enrichment",
+  "results": [
+    {
+      "candidate_id": 35965,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVFGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:D40F",
+      "predicted_fitness": 1.7839040756225586,
+      "reason": "A24Y:D40F。实验观测：D40F 单点为 0.969（variant:78640，实测）；A24Y 单点标签缺失，无法计算加性预期。模型预测：1.784（本批次最高）。假设：A24Y 与第 40 位大体积芳香残基组合可重现训练集中 A24Y 类组合的高富集（如 A24Y:K50Q 2.259、A24Y:T51H 2.195），D40F 的单独收益在 A24Y 背景下可部分保留。局限：D40→F 为极性/体积大幅变化（GRAR740103 体积差约 106），性质只是软知识；未见 A24Y:D40F 的实测，且双点分数不能拆分单点贡献。",
+      "measured_fitness": 1.6068472237186862
+    },
+    {
+      "candidate_id": 36331,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATKLFTVTE",
+      "mutations": "A24Y:T51L",
+      "predicted_fitness": 1.7815771102905273,
+      "reason": "A24Y:T51L。实验观测：T51L 单点 0.733（variant:469044）；同一 T51L 背景在 A24W 下测得 1.809（variant:35723，加性预期 2.188，偏离 −0.380）、在 A24E 下测得 1.760（variant:26593，偏离 −0.232），提示强单点组合呈轻度次加性。模型预测：1.782。假设：A24Y 背景与 T51L 的组合落在 1.7–1.9 区间。局限：A24Y 无单点对照，无法判断其与 T51L 的加性偏离；偏离数值不等于统计显著上位性。",
+      "measured_fitness": 1.7914047810377058
+    },
+    {
+      "candidate_id": 36330,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATKKFTVTE",
+      "mutations": "A24Y:T51K",
+      "predicted_fitness": 1.7759478092193604,
+      "reason": "A24Y:T51K。实验观测：T51K 单点 0.522（variant:468948），T51 位多个替换（H 0.517、M 0.606、V 0.587、R 0.522）均为正向，提示该位点对疏水/碱性替换较耐受。模型预测：1.776。假设：A24Y 背景下 T51K 与 T51L 效果接近。局限：T51 位正向单点集中在少数替换，不能概括位点整体容忍度；A24Y 缺单点标签，组合收益为待验证假设。",
+      "measured_fitness": 1.3615089088411219
+    },
+    {
+      "candidate_id": 36325,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATKEFTVTE",
+      "mutations": "A24Y:T51E",
+      "predicted_fitness": 1.776029109954834,
+      "reason": "A24Y:T51E。实验观测：T51E 单点标签缺失（不是 0，属未知），因此无法给出加性预期；同背景 T51H/T51K/T51L 单点均为正。模型预测：1.776。假设：以负电替换替换中性 Thr 仍可维持 A24Y 带来的高富集；这是一条对“未标注替换”外推能力的检验。局限：电荷性质编码（KLEP840101）不提供 GB1 收益结论，该候选的证据基础弱于 T51L/T51K，属较高不确定性的一注。",
+      "measured_fitness": 1.6952532746164046
+    },
+    {
+      "candidate_id": 8942,
+      "sequence": "MQYKLILNGKTLKGETTTERVDAYTAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "A20R:A24Y",
+      "predicted_fitness": 1.7744874954223633,
+      "reason": "A20R:A24Y。实验观测：A20R 单点 0.864（variant:8904）；A20C 单点仅 −0.115（variant:0），而 A20C:A24Y 实测 1.655（variant:38），A20C 与 A24W/A24H 组合的加性偏离仅 +0.08/+0.16，说明第 20 位在该背景下近中性。模型预测：1.774。假设：A20R 的单独收益可在 A24Y 背景上叠加，得到高于 A20C:A24Y 的富集。局限：A24Y 无单点对照，无法量化 A20R 的边际贡献；A20R 仅有一条实测记录。",
+      "measured_fitness": 1.7859231698176374
+    },
+    {
+      "candidate_id": 35373,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAWTAEKVFKQYANDNGVWGEWTYDDATKTFTVTE",
+      "mutations": "A24W:D40W",
+      "predicted_fitness": 1.6469359397888184,
+      "reason": "A24W:D40W。实验观测：A24W 1.456（variant:35279）与 D40W 1.214（variant:82910）均为强正向单点，算术加性预期 2.670；最接近的实测组合 A24H:D40W 只有 1.924（variant:28067，偏离 −0.604），E19W:D40W 为 1.986（117355，偏离 +0.327），说明双强单点组合的结果依背景而变。模型预测：1.647，明显低于加性预期。假设：模型对“双强单点”系统性打折；若实测接近 2.0 以上，说明模型在组合上偏保守。局限：加性偏离未做显著性检验；模型与观测尺度可能有系统差。",
+      "measured_fitness": 1.6008952171031166
+    },
+    {
+      "candidate_id": 35359,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAWTAEKVFKQYANDNGVFGEWTYDDATKTFTVTE",
+      "mutations": "A24W:D40F",
+      "predicted_fitness": 1.6372849941253662,
+      "reason": "A24W:D40F。实验观测：D40F 单点 0.969（variant:78640），A24W 1.456（variant:35279），加性预期约 2.425；D40 位 A40 侧已有 W/H/F 三个正向单点。模型预测：1.637。假设：与 A24W:D40W 构成同一背景下第 40 位残基的受控对照（W vs F），用于检验芳香残基身份对组合分数的影响。局限：两条候选均未实测；双点分数不能拆为两个单点效应，也不能由 D40W/D40F 的单点大小推断组合排序。",
+      "measured_fitness": 1.7720066014222067
+    },
+    {
+      "candidate_id": 35722,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAWTAEKVFKQYANDNGVDGEWTYDDATKKFTVTE",
+      "mutations": "A24W:T51K",
+      "predicted_fitness": 1.6103591918945312,
+      "reason": "A24W:T51K。实验观测：A24W 1.456、T51K 0.522（variant:468948），加性预期约 1.978；同背景 A24W:T51L 实测 1.809（variant:35723，偏离 −0.380）。模型预测：1.610。假设：在 A24W 背景下 T51K 与 T51L 效果相近（约 1.7–1.8）。局限：A24W:T51K 未实测；T51K 只有一条单点记录；模型预测低于同背景实测 A24W:T51L，若两者实测差距小则再次提示模型压缩。",
+      "measured_fitness": 1.6498646088023772
+    },
+    {
+      "candidate_id": 26241,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAETAEKVFKQYANDNGVYGEWTYDDATKTFTVTE",
+      "mutations": "A24E:D40Y",
+      "predicted_fitness": 1.6082923412322998,
+      "reason": "A24E:D40Y。实验观测：A24E 单点 1.260（variant:26146），A24E:T51L 实测 1.760（variant:26593，加性偏离 −0.232），说明 A24E 背景可与正向第二突变叠加；D40Y 单点标签缺失。模型预测：1.608。假设：A24E 背景上换用第 40 位芳香残基（Y）仍可达到 1.6 左右。局限：D40Y 无单点证据，无法计算加性预期；A24E 与 D40Y 的组合效应纯属待验证假设。",
+      "measured_fitness": 1.4467039165001314
+    },
+    {
+      "candidate_id": 28066,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAHTAEKVFKQYANDNGVVGEWTYDDATKTFTVTE",
+      "mutations": "A24H:D40V",
+      "predicted_fitness": 1.540917158126831,
+      "reason": "A24H:D40V。实验观测：A24H 1.314（variant:27973）、A24H:D40W 1.924（variant:28067，加性预期 2.528，偏离 −0.604）；D40V 单点标签缺失。模型预测：1.541，低于本批次前几名（如 A24Y:T51Q 1.680），此处有意牺牲少量预测值以换取背景多样性，检验模型在 A24H（第三个第 24 位背景）上是否同样给出偏高预测。假设：模型对第 24 位背景的排序（Y>W>E>H）在实测中成立。局限：D40V 缺单点对照；A24H:D40W 的负偏离说明该背景下第二个疏水替换可能递减收益。",
+      "measured_fitness": 1.3942925902688297
+    }
+  ],
+  "summary": {
+    "n_evaluated": 10,
+    "mean_measured_fitness": 1.6104700292128218,
+    "best_measured_fitness": 1.7914047810377058,
+    "fraction_above_wt": 1.0
+  }
+}

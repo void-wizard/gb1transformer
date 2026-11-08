@@ -1,0 +1,9 @@
+{
+  "model_type": "esm2",
+  "method": "random",
+  "rounds_completed": 3,
+  "n_evaluated": 30,
+  "mean_measured_fitness": -1.9413184721564556,
+  "best_measured_fitness": 1.3397096804985373,
+  "experiment_id": "643658e07b724d9482cd78eeda5019ed"
+}

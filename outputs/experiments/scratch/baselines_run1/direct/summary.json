@@ -1,0 +1,9 @@
+{
+  "model_type": "scratch",
+  "method": "direct",
+  "rounds_completed": 3,
+  "n_evaluated": 30,
+  "mean_measured_fitness": 1.7011994639213397,
+  "best_measured_fitness": 2.5294754581801238,
+  "experiment_id": "a676692e526743afa9b732f85d1b16a9"
+}

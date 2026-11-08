@@ -1,0 +1,96 @@
+{
+  "model_type": "scratch",
+  "knowledge": false,
+  "experiment_id": "0d6f4e0fd0704fa7807f91b1c6517ec7",
+  "evaluated_at": "2026-11-08T14:31:29.068647+00:00",
+  "recommendation_sha256": "66693d5904df140b3557ba9360fe0c57e66c048f8c83da307cd039046c3853c7",
+  "score_type": "measured_log_enrichment",
+  "results": [
+    {
+      "candidate_id": 471523,
+      "sequence": "MQYKLILNGKTLKGETTTEAADAWTAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "V21A:A24W",
+      "predicted_fitness": 1.2403792142868042,
+      "reason": "V21A:A24W。已知实验观察：V21A:A24H 实测 2.286（训练集最高）、V21A:A24Y 实测 2.052（本组上轮最高）、而 V21W:A24H 仅 1.421，支持“21 位增益需要 Ala 型小侧链”的假设，但 V21A 的增益能否从 24H/24Y 迁移到 24W 骨架完全未知；A24W 骨架本身较强（Q2F:A24W 1.967、A24W:D40H 2.094、A24W:K50W 1.977）。模型预测（非实验值）：1.240，偏低；但上轮模型对 21×24 组合低估约 0.63（V21A:A24Y 预测 1.425→实测 2.052），故低预测不能作为排除依据。证据局限：双点整体富集不能拆分 V21A 或 A24W 的单点效应；若实测明显低于 2.05，则说明 21A 收益依赖 24Y/24H 特异性上位而非通用；每组合仅 1 个候选、无重复测量，噪声未知。",
+      "measured_fitness": 2.0175893889276946
+    },
+    {
+      "candidate_id": 474175,
+      "sequence": "MQYKLILNGKTLKGETTTEAFDAYTAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "V21F:A24Y",
+      "predicted_fitness": 1.6253185272216797,
+      "reason": "V21F:A24Y。已知实验观察：A24Y 是本组最强骨架（V21A:A24Y 2.052、A24Y:K50Q 2.259、A24Y:K50S 2.145、A24Y:N37V 2.238），而 21 位大体积芳香 V21W:A24H 仅 1.421，提示 21 位体积有严格上限。D21F 体积小于 W 但为芳香，可把“小侧链阈值”从定性变成梯度检验（Ala 2.052 vs Met vs Phe vs Trp 1.421）。模型预测：1.625，为本批 21 位系列最高。证据局限：预测非实测；上轮模型排序与实测几乎无关（Spearman≈0.05），且对 21×24 上位系统性低估约 0.6，故排序仅作参考；双点值不能证明 V21F 单点有益。",
+      "measured_fitness": 1.6851727777958911
+    },
+    {
+      "candidate_id": 478171,
+      "sequence": "MQYKLILNGKTLKGETTTEAMDAYTAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+      "mutations": "V21M:A24Y",
+      "predicted_fitness": 1.2073888778686523,
+      "reason": "V21M:A24Y。已知实验观察：以 V21A:A24Y 2.052、V21W:A24H 1.421 为两端，本组尚未有中间体积残基数据；Met 与野生型 Val 同为中等体积但非 β-支链，用来检验 21 位“体积/支链”梯度是否连续而非 Ala 特例。模型预测：1.207，偏低于同批 V21F（1.625），但模型整体对高上位组合压缩（上轮预测值域 1.286–1.594，实测 1.367–2.052），且预测前二最终排名靠后、预测第七第八反而最高，低预测不构成排除理由。证据局限：模型值非实验测量；单点 V21M 效应未知（本组迄今未测任何单点），只能由跨背景双点差异间接推断。",
+      "measured_fitness": 1.2718449919192
+    },
+    {
+      "candidate_id": 36198,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDATLTFTVTE",
+      "mutations": "A24Y:K50L",
+      "predicted_fitness": 1.3410371541976929,
+      "reason": "A24Y:K50L。已知实验观察：A24Y 背景下第 50 位已建立清晰偏好 Q 2.259 > S 2.145 > D 1.898 > G 1.817 > R 1.758（本组）> V 1.719 > I 1.650 > T 1.384，脂肪链越长/体积越大趋势下降但 V、I 仍为正富集；Leu 提供更长的脂肪链端点，可直接检验该趋势是否单调。模型预测：1.341。证据局限：模型对 K50 位点存在残基类型依赖的偏差（上轮 K50T 高估 0.21、K50V/I 低估 0.13–0.16），预测排序不可靠；A24Y:K50L 的整体富集不能拆分 K50L 的单点贡献；50 位高分已被证明强烈依赖 24 骨架（A24H:K50Q 仅 1.464），不能外推到其他骨架。",
+      "measured_fitness": 1.629641472684334
+    },
+    {
+      "candidate_id": 35965,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVFGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:D40F",
+      "predicted_fitness": 1.7839040756225586,
+      "reason": "A24Y:D40F。已知实验观察：第 40 位是明确高频热点——A24W:D40H 2.094、E19W:D40W 1.986、A24H:D40W 1.924、A24Y:D40N 1.921、A24F:D40N 1.890，且 D40H/D40W 在大体积侧链下仍为高分；但 A24Y 背景此前只测过极性的 Asn。D40F 检验 A24Y 下 40 位芳香/疏水取代能否复制其他骨架的高分。模型预测：1.784，为本批最高。证据局限：这些高分属不同 24 骨架的双点整体效应，不能直接外推为 24Y×40F 有益；上轮预测最高项实测为倒数第二，故 1.784 不能视为可靠排序；双点不能拆分单点；预测非实验值。",
+      "measured_fitness": 1.6068472237186862
+    },
+    {
+      "candidate_id": 35373,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAWTAEKVFKQYANDNGVWGEWTYDDATKTFTVTE",
+      "mutations": "A24W:D40W",
+      "predicted_fitness": 1.6469359397888184,
+      "reason": "A24W:D40W。已知实验观察：与 35965（A24Y:D40F）构成“同一位点、不同 24 骨架”的成对对照，并以 A24W:D40H 2.094 与 E19W:D40W 1.986 为锚点：若 40 位大残基增益在 24W 骨架也成立，则高位点收益不依赖 24H/24Y 特定身份，这与本组“多位点收益不跨 24 骨架迁移”（A24H:K50Q 1.464、A24H:T51R 1.464）形成对照检验。模型预测：1.647。证据局限：24W+40W 为双大芳香并置（虽然 24W×50W 实测 1.977 提示此类并非普遍受抑，但 A24F:T51W 仅 1.335 说明 24F 骨架不同）；双点整体值不能拆分单点；预测非实测。",
+      "measured_fitness": 1.6008952171031166
+    },
+    {
+      "candidate_id": 36045,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGKWTYDDATKTFTVTE",
+      "mutations": "A24Y:E42K",
+      "predicted_fitness": 1.7762064933776855,
+      "reason": "A24Y:E42K。已知实验观察：A24Y 背景下碱性残基已多次偏正（A24Y:Q32R 2.008、A24Y:K50R 1.758、A24Y:Q32K 1.759），而 E42 是已知数据中出现但从未在 A24Y 骨架上系统检验的位点（本组上轮也未执行该方向）。E42K 把“碱性化”假设首次放到暴露电荷位点 42 上检验。模型预测：1.776（本批第二高）。证据局限：42 位无任何单点或同背景数据，纯属模型外推（且模型对带电残基在未见位点的插值可信度低）；上轮模型预测第一的候选实测倒数第二，说明高预测值不代表高实测；双点效应不可拆分。",
+      "measured_fitness": 1.574586361500465
+    },
+    {
+      "candidate_id": 35941,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDDWTKTFTVTE",
+      "mutations": "A24Y:A48W",
+      "predicted_fitness": 1.7149407863616943,
+      "reason": "A24Y:A48W。已知实验观察：A24H:A48Q 实测 2.037，说明第 48 位替换在 24H 骨架上与高富集相容；但 A24Y 背景从未检验 48 位，且已知搭档为 Gln（极性）而非芳香。A48W 检验大芳香侧链能否在最佳骨架 A24Y 上复制 48 位增益。模型预测：1.715。证据局限：48 位邻近疏水核心，Trp 体积可能过载；A24H×A48Q 的高分不能证明 48 位单点有益，更不能外推为 24Y×48W 有益（本组已两次观察到第二位点收益不跨 24 骨架迁移）；预测值非实验测量。",
+      "measured_fitness": 1.5844566843932515
+    },
+    {
+      "candidate_id": 36018,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNGVDGEWTYDYATKTFTVTE",
+      "mutations": "A24Y:D47Y",
+      "predicted_fitness": 1.7027277946472168,
+      "reason": "A24Y:D47Y。已知实验观察：训练集 A24W:D47R 实测 1.995，显示 47 位可容纳较大带正电侧链并保持高富集；A24Y 骨架尚未做过 47 位替换。D47Y 把 47 位从“带电大侧链”换成“芳香大侧链”，检验该位点的高分是否来自体积容忍而非电荷。模型预测：1.703。证据局限：47 位无单点数据，A24W:D47R 的高分不能拆分为 D47R 单点效应；24W 与 24Y 骨架的 50/51 位结果已知差异很大（A24Y:K50Q 2.259 vs A24H:K50Q 1.464），因此 47 位收益跨 24 骨架迁移是待验证假设而非结论；预测非实测。",
+      "measured_fitness": 1.948173773828444
+    },
+    {
+      "candidate_id": 36120,
+      "sequence": "MQYKLILNGKTLKGETTTEAVDAYTAEKVFKQYANDNIVDGEWTYDDATKTFTVTE",
+      "mutations": "A24Y:G38I",
+      "predicted_fitness": 1.435049057006836,
+      "reason": "A24Y:G38I。已知实验观察：G38 是 A24Y 骨架下最高分搭档之一（A24Y:G38F 实测 2.006），但该位点只测过芳香取代，无法区分“体积效应”与“芳香效应”。Ile 与 Phe 体积相近而非芳香，用最小改动做机制区分，并为后续在该位点选择残基类型提供依据。模型预测：1.435（中等）。证据局限：单一位点数据点太少，模型对 38 位的插值可信度低；A24Y:G38F 的高分不能证明 G38 任一取代有益；双点整体效应无法拆分；预测值属模型值，非实验富集；本组尚未测任何单点，所有结论只能停留在双点整体层面。",
+      "measured_fitness": 0.7938139573055787
+    }
+  ],
+  "summary": {
+    "n_evaluated": 10,
+    "mean_measured_fitness": 1.5713021849176663,
+    "best_measured_fitness": 2.0175893889276946,
+    "fraction_above_wt": 1.0
+  }
+}

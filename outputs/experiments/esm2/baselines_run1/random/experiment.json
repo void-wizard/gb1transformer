@@ -1,0 +1,24 @@
+{
+  "model_type": "esm2",
+  "method": "random",
+  "knowledge": false,
+  "rounds": 3,
+  "top_k": 10,
+  "seed": 42,
+  "predictor_update": "fixed",
+  "candidate_count": 107392,
+  "candidates_sha256": "5d020927523d783650a387843672ea76e23e7fc918c2ab6dc3d14c5bbdabeaee",
+  "train_sha256": "fc6dbdb94eadeed54c69daf0a4da791c7646661783f4009e0f8092671f2fb42d",
+  "model_sha256": {
+    "outputs/esm2/best_model/config.json": "ec190377b77e8a2253e54b144648deb93085ffc27123ef79dc9931404bf13e84",
+    "outputs/esm2/best_model/model.safetensors": "fe28bc15bb6b9f8ca7679d49bf3ba3f4cb5c09774189a4d630bbc26313c07a84",
+    "outputs/esm2/best_model/special_tokens_map.json": "3aedcd4211c0d43aec4e607ff60a63255f3174ead795e997350f09a5f8cd9ee1",
+    "outputs/esm2/best_model/tokenizer_config.json": "0318865d1afb7f445e54e14627aa897982d106af25a00ddf5cf8a8288951ada9",
+    "outputs/esm2/best_model/training_args.bin": "54048d323c8e6fd8ffac00b3ca0aaf3a40ca54890b9975f83c7190c1f63848bb",
+    "outputs/esm2/best_model/vocab.txt": "0b82cc0a7c7cf9e567b1e5892d793285b9fbae822c964ca48696f7db44598e03"
+  },
+  "device": "cuda:0",
+  "cuda_visible_devices": "0",
+  "device_name": "NVIDIA RTX A6000",
+  "experiment_id": "643658e07b724d9482cd78eeda5019ed"
+}

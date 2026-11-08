@@ -1,0 +1,8 @@
+{
+  "model_type": "scratch",
+  "rounds": 3,
+  "top_k": 10,
+  "predictor_update": "fixed",
+  "knowledge": true,
+  "experiment_id": "31bac64d18974ea082c75ef1a7f17a8e"
+}
